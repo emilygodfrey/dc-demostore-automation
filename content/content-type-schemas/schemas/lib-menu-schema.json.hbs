@@ -1,0 +1,40 @@
+{ 
+	"$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://amprsa.net/lib/menu",
+    
+	"type": "object",
+    "title": "Menu",
+
+    "definitions": {
+        "menuItemConfig": {
+            "type": "object",
+            "title": "Menu",
+            "properties": {
+                "hidden": {
+                    "type": "boolean",
+                    "title": "Hidden"
+                },
+                "priority": {
+                    "type": "number",
+                    "title": "Priority"
+                },
+                "content": {
+                    "title": "Menu Content",
+                    "allOf": [
+                        { "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link" },
+                        {
+                            "properties": {
+                                "contentType": {
+                                    "enum": [
+                                        "https://amprsa.net/content/simple-banner"
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                }
+            },
+            "required": ["priority"]
+        }
+    }
+}

@@ -1,0 +1,28 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://amprsa.net/site/integration/rest",
+
+	"title": "rest integration config",
+	"description": "rest commerce integration config",
+	"allOf": [{ "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content" }],
+	
+	"type": "object",
+	"properties": {
+	    "productURL": {
+    	  	"type": "string",
+      	  	"title": "Product URL",
+      	  	"description": "URL to a product JSON file"
+    	},
+	    "categoryURL": {
+    	  	"type": "string",
+      	  	"title": "Category URL",
+      	  	"description": "URL to a category JSON file"
+    	},
+	    "translationsURL": {
+    	  	"type": "string",
+      	  	"title": "Translations URL",
+      	  	"description": "URL to a translations JSON file"
+    	}
+	},
+	"propertyOrder": ["type"]
+}

@@ -1,0 +1,5 @@
+{
+  "body": "./schemas/amplience-schema.json",
+  "schemaId": "https://amprsa.net/site/integration/amplience",
+  "validationLevel": "PARTIAL"
+}

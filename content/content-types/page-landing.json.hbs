@@ -1,0 +1,31 @@
+{
+  "contentTypeUri": "https://amprsa.net/site/pages/landing",
+  "status": "ACTIVE",
+  "settings": {
+    "label": "Landing Page",
+    "icons": [
+      {
+        "size": 256,
+        "url": "https://bigcontent.io/cms/icons/experience-management/exp-nodebranch.png"
+      }
+    ],
+    "visualizations": [
+      {
+        "label": "Website",
+        "templatedUri": "{{url}}/cms/visualization/page?content=\{{content.sys.id}}&vse=\{{vse.domain}}&realtime=true",
+        "default": true
+      },
+      {
+        "label": "Development",
+        "templatedUri": "http://localhost:3000/cms/visualization/page?content=\{{content.sys.id}}&vse=\{{vse.domain}}&realtime=true",
+        "default": false
+      }
+    ],
+    "cards": [
+      {
+        "templatedUri": "https://amp-rsa-cards.vercel.app/?#vse=\{{vse.domain}}&content=\{{content.sys.id}}"
+      }
+    ]
+  },
+  "repositories": [ "sitestructure" ]
+}

@@ -1,0 +1,5 @@
+{
+  "body": "./schemas/site-pages-schema.json",
+  "schemaId": "https://amprsa.net/site/pages",
+  "validationLevel": "CONTENT_TYPE"
+}

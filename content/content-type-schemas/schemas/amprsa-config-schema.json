@@ -1,0 +1,68 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://amprsa.net/site/amprsa",
+
+	"title": "amprsa config",
+	"description": "Describes a storefront integration configuration.",
+
+	"allOf": [
+		{
+			"$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+		}
+	],
+	
+	"type": "object",
+	"properties": {
+		"environment": {
+			"title": "Environment name",
+			"description": "The name of the environment",
+			"type": "string",
+			"minLength": 0,
+			"maxLength": 200
+		},
+		"url": {
+			"title": "App deployment URL",
+			"type": "string",
+			"minLength": 0,
+			"maxLength": 200
+		},
+		"algolia": {
+			"title": "Algolia configuration",
+			"type": "object",
+			"allOf": [{ "$ref": "https://amprsa.net/site/integration/algolia#/definitions/config" }]
+		},
+		"cms": {
+			"title": "Amplience configuration",
+			"type": "object",
+			"allOf": [{ "$ref": "https://amprsa.net/site/integration/amplience#/definitions/config" }]
+		},
+		"googlemaps": {
+			"title": "Google Maps configuration",
+			"type": "object",
+			"allOf": [{ "$ref": "https://amprsa.net/site/integration/googlemaps#/definitions/config" }]
+		},
+		"commerce": {
+			"title": "Commerce integration",
+			"allOf": [
+				{ "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-reference" },
+				{
+					"properties": {
+						"contentType": {
+							"enum": [
+								"https://amprsa.net/site/integration/rest"
+							]
+						}
+					}
+				}
+			]
+		}
+	},
+	"propertyOrder": [
+		"environment",
+		"url",
+		"cms",
+		"commerce",
+		"algolia",
+		"googlemaps"
+	]
+}

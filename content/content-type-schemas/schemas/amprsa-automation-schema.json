@@ -1,0 +1,50 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://amprsa.net/site/automation",
+
+	"title": "amprsa automation",
+	"description": "Intended to automate mapping.json. This holds mappings from imported content item IDs to current content item IDs.",
+
+	"allOf": [
+		{
+			"$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+		}
+	],
+	
+	"definitions": {
+		"mapping": {
+			"type": "object",
+			"properties": {
+				"from": {
+					"title": "mapping ->",
+					"type": "string",
+					"minLength": 0,
+					"maxLength": 100
+				},
+				"to": {
+					"title": "-> mapping",
+					"type": "string",
+					"minLength": 0,
+					"maxLength": 100
+				}
+			}
+		}
+	},
+
+	"type": "object",
+	"properties": {
+		"contentItems": {
+			"title": "Content items",
+			"type": "array",
+			"items": { "$ref": "#/definitions/mapping" }
+		},
+		"workflowStates": {
+			"title": "Workflow states",
+			"type": "array",
+			"items": { "$ref": "#/definitions/mapping" }
+		}
+	},
+	"propertyOrder": [
+		"contentItems", "workflowStates"
+	]
+}

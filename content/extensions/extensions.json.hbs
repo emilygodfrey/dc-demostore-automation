@@ -1,0 +1,103 @@
+[
+  {
+    "name": "dom-extension",
+    "label": "DOM Extension",
+    "description": "DOM editor",
+    "height": 600,
+    "url": "https://dom-editor.extensions.content.amplience.net",
+    "category": "CONTENT_FIELD",
+    "parameters": "{}",
+    "snippets": [],
+    "settings": null,
+    "status": "ACTIVE"
+  },
+  {
+    "name": "custom-rich-text",
+    "label": "Custom Rich Text",
+    "description": "Custom Rich Text Editor",
+    "url": "https://rich-text.extensions.content.amplience.net",
+    "height": 500,
+    "category": "CONTENT_FIELD",
+    "parameters": "{\n  \"language\": \"json\",\n  \"styles\": \".was-price { color: red; }\",\n  \"tools\": {\n    \"blacklist\": [],\n    \"dc-content-link\": {\n      \"contentTypes\": [\n        \"https://amprsa.net/content/simple-banner\",\n        \"https://amprsa.net/banner-with-poi\",\n        \"https://amprsa.net/content/blog\",\n        \"https://amprsa.net/content/blog-list\",\n        \"https://amprsa.net/content/card\",\n        \"https://amprsa.net/content/card-list\",\n        \"https://amprsa.net/content/curated-product-grid\",\n        \"https://amprsa.net/content/rich-text\",\n        \"https://amprsa.net/content/product-grid\",\n        \"https://amprsa.net/content/html\",\n        \"https://amprsa.net/content/image\",\n        \"https://amprsa.net/content/slider\",\n        \"https://amprsa.net/content/split-block\",\n        \"https://amprsa.net/content/text\",\n        \"https://amprsa.net/content/video\",\n        \"https://amprsa.net/content/dynamic-blog-list\"\n      ]\n    },\n    \"inline_styles\": {\n      \"classNames\": [\n        {\n          \"className\": \"was-price\",\n          \"label\": \"Was Price\"\n        }\n      ]\n    }\n  },\n  \"toolbar\": {\n    \"layout\": [\n      {\n        \"type\": \"group\",\n        \"children\": [\n          {\n            \"type\": \"button\",\n            \"toolName\": \"undo\"\n          },\n          {\n            \"type\": \"button\",\n            \"toolName\": \"redo\"\n          }\n        ]\n      },\n      {\n        \"type\": \"dropdown\",\n        \"label\": \"Styles\",\n        \"toolNames\": [\n          \"inline_styles_className_was-price\"\n        ]\n      },\n      {\n        \"type\": \"group\",\n        \"children\": [\n          {\n            \"type\": \"button\",\n            \"toolName\": \"strong\"\n          },\n          {\n            \"type\": \"button\",\n            \"toolName\": \"em\"\n          },\n          {\n            \"type\": \"button\",\n            \"toolName\": \"link\"\n          }\n        ]\n      },\n      {\n        \"type\": \"group\",\n        \"children\": [\n          {\n            \"type\": \"button\",\n            \"toolName\": \"bullet_list\"\n          },\n          {\n            \"type\": \"button\",\n            \"toolName\": \"ordered_list\"\n          }\n        ]\n      },\n      {\n        \"type\": \"group\",\n        \"children\": [\n          {\n            \"type\": \"button\",\n            \"toolName\": \"dc-image-link\"\n          },\n          {\n            \"type\": \"button\",\n            \"toolName\": \"image\"\n          },\n          {\n            \"type\": \"button\",\n            \"toolName\": \"dc-content-link\"\n          },\n          {\n            \"type\": \"button\",\n            \"toolName\": \"blockquote\"\n          },\n          {\n            \"type\": \"button\",\n            \"toolName\": \"code_block\"\n          },\n          {\n            \"type\": \"button\",\n            \"toolName\": \"horizontal_rule\"\n          }\n        ]\n      },\n      {\n        \"type\": \"group\",\n        \"children\": [\n          {\n            \"type\": \"button\",\n            \"toolName\": \"clear_formatting\"\n          }\n        ]\n      }\n    ]\n  }\n}",
+    "snippets": [
+      {
+        "label": "Rich Text",
+        "body": "{\n  \"type\": \"array\",\n  \"ui:extension\": {\n    \"name\": \"custom-rich-text\"\n  }\n}"
+      }
+    ],
+    "settings": "{\"API\":{\"READ\":false,\"EDIT\":false},\"SANDBOX\":{\"SAME_ORIGIN\":true,\"MODALS\":false,\"NAVIGATION\":false,\"POPUPS\":false,\"POPUP_ESCAPE_SANDBOX\":false,\"DOWNLOADS\":false,\"FORMS\":false}}",
+    "status": "ACTIVE"
+  },
+  {
+    "name": "hierarchy-picker",
+    "label": "Hierarchy Picker",
+    "description": "",
+    "url": "https://dev-dc-extension-hierarchy-chooser.dev.adis.ws/",
+    "height": 200,
+    "category": "CONTENT_FIELD",
+    "parameters": "{}",
+    "snippets": [],
+    "settings": "{\"API\":{\"READ\":true,\"EDIT\":true},\"SANDBOX\":{\"SAME_ORIGIN\":true,\"MODALS\":true,\"NAVIGATION\":true,\"POPUPS\":true,\"POPUP_ESCAPE_SANDBOX\":true,\"DOWNLOADS\":true,\"FORMS\":true}}",
+    "status": "ACTIVE"
+  },
+  {
+    "name": "image-poi",
+    "label": "Image POI",
+    "description": "Editing Interface for managing an Image",
+    "url": "https://apps.dev-artifacts.adis.ws/dc-extension-di-transform/feature-ai-2/index.html",
+    "height": 500,
+    "category": "CONTENT_FIELD",
+    "parameters": "{\n  \"useVSE\": true\n}",
+    "snippets": [],
+    "settings": "{\"API\":{\"READ\":false,\"EDIT\":false},\"SANDBOX\":{\"SAME_ORIGIN\":false,\"MODALS\":false,\"NAVIGATION\":false,\"POPUPS\":false,\"POPUP_ESCAPE_SANDBOX\":false,\"DOWNLOADS\":false,\"FORMS\":false}}",
+    "status": "ACTIVE"
+  },
+  {
+    "name": "kanbanboard",
+    "label": "Production Board",
+    "description": "Test",
+    "url": "https://kanban-board.extensions.content.amplience.net",
+    "height": 200,
+    "category": "DASHBOARD",
+    "parameters": "{\n  \"repositoryId\": \"{{cms.repositories.content}}\",\n  \"_comment\": \"Content repository\",\n  \"statuses\": [\n    {\n      \"id\": \"{{cms.workflowStates.new}}\",\n      \"_comment\": \"NEW status\"\n    },\n    {\n      \"id\": \"{{cms.workflowStates.inProgress}}\",\n      \"_comment\": \"In progress status\"\n    },\n    {\n      \"id\": \"{{cms.workflowStates.readyForReview}}\",\n      \"_comment\": \"Ready for review status\"\n    },\n    {\n      \"id\": \"{{cms.workflowStates.rejected}}\",\n      \"_comment\": \"Rejected status\"\n    },\n    {\n      \"id\": \"{{cms.workflowStates.approved}}\",\n      \"_comment\": \"Approved status\"\n    }\n  ]\n}",
+    "snippets": [],
+    "settings": "{\"API\":{\"READ\":true,\"EDIT\":true},\"SANDBOX\":{\"SAME_ORIGIN\":true,\"MODALS\":true,\"NAVIGATION\":true,\"POPUPS\":true,\"POPUP_ESCAPE_SANDBOX\":true,\"DOWNLOADS\":true,\"FORMS\":true}}",
+    "status": "ACTIVE"
+  },
+  {
+    "name": "translation-board",
+    "label": "Translation Board",
+    "description": "test",
+    "url": "https://kanban-board.extensions.content.amplience.net",
+    "height": 200,
+    "category": "DASHBOARD",
+    "parameters": "{\n  \"repositoryId\": \"{{cms.repositories.content}}\",\n  \"_comment\": \"Content repository\",\n  \"statuses\": [\n    {\n      \"id\": \"{{cms.workflowStates.readyForTranslation}}\",\n      \"_comment\": \"Ready for Translation status\"\n    },\n    {\n      \"id\": \"{{cms.workflowStates.sentForTranslation}}\",\n      \"_comment\": \"Sent for translation status\"\n    },\n    {\n      \"id\": \"{{cms.workflowStates.translationInProgress}}\",\n      \"_comment\": \"Translation in progress status\"\n    },\n    {\n      \"id\": \"{{cms.workflowStates.translationComplete}}\",\n      \"_comment\": \"Translation complete status\"\n    }\n  ]\n}",
+    "snippets": [],
+    "settings": "{\"API\":{\"READ\":true,\"EDIT\":true},\"SANDBOX\":{\"SAME_ORIGIN\":true,\"MODALS\":true,\"NAVIGATION\":true,\"POPUPS\":true,\"POPUP_ESCAPE_SANDBOX\":true,\"DOWNLOADS\":true,\"FORMS\":true}}",
+    "status": "ACTIVE"
+  },
+  {
+    "name": "localisation",
+    "label": "Localisation",
+    "description": "Localisation extension",
+    "url": "https://localization.extensions.content.amplience.net",
+    "height": 200,
+    "category": "CONTENT_FIELD",
+    "parameters": "{ \"TRANSLATION_API_KEY\": \"trnsl.1.1.20200902T174836Z.16885a1c103ba5c8.e0089d59687fe1e1f1bb4716f5d7c4e38b67eed3\" }",
+    "snippets": [],
+    "settings": null,
+    "status": "ACTIVE"
+  },
+  {
+    "name": "product-selector-rest",
+    "label": "REST product selector",
+    "description": "REST product selector",
+    "url": "https://productselector.amprsa.net",
+    "height": 200,
+    "category": "CONTENT_FIELD",
+    "parameters": "{\n  \"apiBaseUrl\": \"{{url}}/api\" \n}",
+    "snippets": [],
+    "settings": null,
+    "status": "ACTIVE"
+  }
+]

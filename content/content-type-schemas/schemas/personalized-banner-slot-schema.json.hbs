@@ -1,0 +1,60 @@
+{ 
+  "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
+  "id": "https://amprsa.net/slots/personalized-banner",
+  "title": "Personalized Banner Slot",
+  "description": "A Slot that can accept multiple banner for different segments (also known as a Targeted Hero)",
+  "allOf": [
+    {
+      "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+    }
+  ],
+  "type": "object",
+  "properties": {
+    "segments": {
+      "type": "array",
+      "title": "Content",
+
+      "items": {
+        "type": "object",
+        "properties": {
+          "segment": {
+            "type": "string",
+            "title": "Segment",
+            "enum": [
+              "bargain-hunter",
+              "fashionista",
+              "home-trendsetter",
+              "globe-trotter"
+            ]
+          },
+          "content": {
+            "title": "Content",
+            "allOf": [
+              {
+                "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"
+              },
+              {
+                "properties": {
+                  "contentType": {
+                    "title": "contentType",
+                    "enum": [
+                      "https://amprsa.net/content/simple-banner",
+                      "https://amprsa.net/content/advanced-banner",
+                      "https://amprsa.net/content/simple-localized-banner",
+                      "https://amprsa.net/content/slider",
+                      "https://amprsa.net/content/video"
+                    ]
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "propertyOrder": [
+          "segment",
+          "content"
+        ]
+      }
+    }
+  }
+}

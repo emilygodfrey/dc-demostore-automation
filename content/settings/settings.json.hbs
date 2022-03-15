@@ -1,0 +1,153 @@
+{
+  "settings": {
+    "devices": [
+      {
+        "name": "HD Desktop",
+        "width": 1920,
+        "height": 1080,
+        "orientate": false
+      },
+      {
+        "name": "Large Desktop",
+        "width": 1440,
+        "height": 900,
+        "orientate": false
+      },
+      {
+        "name": "Desktop",
+        "width": 1024,
+        "height": 768,
+        "orientate": false
+      },
+      {
+        "name": "Tablet",
+        "width": 640,
+        "height": 768,
+        "orientate": false
+      },
+      {
+        "name": "Native App",
+        "width": 420,
+        "height": 820,
+        "orientate": false
+      },
+      {
+        "name": "Mobile",
+        "width": 320,
+        "height": 512,
+        "orientate": false
+      }
+    ],
+    "applications": [
+      {
+        "name": "Site",
+        "templatedUri": "{{url}}/timestamp?vse=\{{vse.domain}}&timestamp=\{{context.timestamp}}"
+      },
+      {
+        "name": "Development",
+        "templatedUri": "http://localhost:3000/timestamp?vse=\{{vse.domain}}&timestamp=\{{context.timestamp}}"
+      }
+    ],
+    "localization": {
+      "locales": [
+        "en-US",
+        "fr-FR",
+        "it-IT",
+        "es-ES",
+        "de-DE"
+      ]
+    }
+  },
+  "workflowStates": [
+    {
+      "id": "601bcfa7c9e77c000129e68c",
+      "label": "Ready for Translation",
+      "createdBy": "0082e87b-5551-4dbe-8b83-ae0c3730e25d",
+      "createdDate": "2021-02-04T10:42:47.828Z",
+      "lastModifiedBy": "0082e87b-5551-4dbe-8b83-ae0c3730e25d",
+      "lastModifiedDate": "2021-02-04T10:42:47.828Z",
+      "color": "rgb(113,114,153)"
+    },
+    {
+      "id": "601bcfa7c9e77c000129e68b",
+      "label": "Ready for Scheduling",
+      "createdBy": "0082e87b-5551-4dbe-8b83-ae0c3730e25d",
+      "createdDate": "2021-02-04T10:42:47.823Z",
+      "lastModifiedBy": "0082e87b-5551-4dbe-8b83-ae0c3730e25d",
+      "lastModifiedDate": "2021-02-04T10:42:47.823Z",
+      "color": "rgb(126,224,216)"
+    },
+    {
+      "id": "601bcfa74cedfd0001f0afe6",
+      "label": "Translation complete",
+      "createdBy": "0082e87b-5551-4dbe-8b83-ae0c3730e25d",
+      "createdDate": "2021-02-04T10:42:47.809Z",
+      "lastModifiedBy": "0082e87b-5551-4dbe-8b83-ae0c3730e25d",
+      "lastModifiedDate": "2021-02-04T10:42:47.809Z",
+      "color": "rgb(0,67,115)"
+    },
+    {
+      "id": "601bcfa74cedfd000150156a",
+      "label": "NEW",
+      "createdBy": "0082e87b-5551-4dbe-8b83-ae0c3730e25d",
+      "createdDate": "2021-02-04T10:42:47.805Z",
+      "lastModifiedBy": "0082e87b-5551-4dbe-8b83-ae0c3730e25d",
+      "lastModifiedDate": "2021-02-04T10:42:47.805Z",
+      "color": "rgb(240,110,170)"
+    },
+    {
+      "id": "601bcfa7c9e77c00013b0d68",
+      "label": "In progress",
+      "createdBy": "0082e87b-5551-4dbe-8b83-ae0c3730e25d",
+      "createdDate": "2021-02-04T10:42:47.805Z",
+      "lastModifiedBy": "0082e87b-5551-4dbe-8b83-ae0c3730e25d",
+      "lastModifiedDate": "2021-02-04T10:42:47.805Z",
+      "color": "rgb(182,216,227)"
+    },
+    {
+      "id": "601bcfa7c9e77c00012ce8b8",
+      "label": "Ready for review",
+      "createdBy": "0082e87b-5551-4dbe-8b83-ae0c3730e25d",
+      "createdDate": "2021-02-04T10:42:47.804Z",
+      "lastModifiedBy": "0082e87b-5551-4dbe-8b83-ae0c3730e25d",
+      "lastModifiedDate": "2021-02-04T10:42:47.804Z",
+      "color": "rgb(198,156,84)"
+    },
+    {
+      "id": "601bcfa7c9e77c000197e7d7",
+      "label": "Translation in progress",
+      "createdBy": "0082e87b-5551-4dbe-8b83-ae0c3730e25d",
+      "createdDate": "2021-02-04T10:42:47.804Z",
+      "lastModifiedBy": "0082e87b-5551-4dbe-8b83-ae0c3730e25d",
+      "lastModifiedDate": "2021-02-04T10:42:47.804Z",
+      "color": "rgb(205,154,195)"
+    },
+    {
+      "id": "601bcfa7c9e77c00013b0d67",
+      "label": "Sent for translation",
+      "createdBy": "0082e87b-5551-4dbe-8b83-ae0c3730e25d",
+      "createdDate": "2021-02-04T10:42:47.801Z",
+      "lastModifiedBy": "0082e87b-5551-4dbe-8b83-ae0c3730e25d",
+      "lastModifiedDate": "2021-02-04T10:42:47.801Z",
+      "color": "rgb(192,192,48)"
+    },
+    {
+      "id": "601bcfa7c9e77c0001787264",
+      "label": "Rejected",
+      "createdBy": "0082e87b-5551-4dbe-8b83-ae0c3730e25d",
+      "createdDate": "2021-02-04T10:42:47.793Z",
+      "lastModifiedBy": "0082e87b-5551-4dbe-8b83-ae0c3730e25d",
+      "lastModifiedDate": "2021-02-04T10:42:47.793Z",
+      "color": "rgb(198,78,103)"
+    },
+    {
+      "id": "601bcfa7c9e77c00017d3c24",
+      "label": "Approved",
+      "createdBy": "0082e87b-5551-4dbe-8b83-ae0c3730e25d",
+      "createdDate": "2021-02-04T10:42:47.739Z",
+      "lastModifiedBy": "0082e87b-5551-4dbe-8b83-ae0c3730e25d",
+      "lastModifiedDate": "2021-02-04T10:42:47.739Z",
+      "color": "rgb(63,152,134)"
+    }
+  ]
+}

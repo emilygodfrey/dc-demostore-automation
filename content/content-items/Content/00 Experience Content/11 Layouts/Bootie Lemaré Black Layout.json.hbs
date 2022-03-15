@@ -1,0 +1,184 @@
+{
+  "id": "2728e161-2989-4917-a2f3-c44762b22aec",
+  "body": {
+    "_meta": {
+      "name": "Bootie Lemaré Black Layout",
+      "schema": "https://amprsa.net/content/product-layout"
+    },
+    "slots": {
+      "main": [
+        {
+          "name": "section",
+          "properties": {
+            "variant": "default",
+            "title": "Hello world 22"
+          },
+          "slots": {
+            "title": [
+              {
+                "name": "typography",
+                "properties": {
+                  "variant": "h2"
+                },
+                "slots": {
+                  "children": [
+                    {
+                      "name": "product_attribute",
+                      "properties": {
+                        "variant": "header"
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "children": [
+              {
+                "name": "product_image_viewer",
+                "properties": {
+                  "variant": "portrait",
+                  "numItems": "3"
+                }
+              },
+              {
+                "name": "grid",
+                "properties": {
+                  "direction": "row",
+                  "type": "container",
+                  "spacing": "2"
+                },
+                "slots": {
+                  "children": [
+                    {
+                      "name": "grid",
+                      "properties": {
+                        "type": "item",
+                        "breakpoints": {
+                          "xs": "12",
+                          "md": "9"
+                        },
+                        "direction": "column"
+                      },
+                      "slots": {
+                        "children": [
+                          {
+                            "name": "content_block",
+                            "properties": {
+                              "content": {
+                                "id": "4bbfefb4-fe50-4ce1-9dc3-8abb5eb954ff",
+                                "contentType": "https://amprsa.net/content/simple-banner",
+                                "_meta": {
+                                  "schema": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"
+                                }
+                              }
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "name": "grid",
+                      "properties": {
+                        "direction": "column",
+                        "justify": "flex-start",
+                        "type": "item",
+                        "breakpoints": {
+                          "xs": "12",
+                          "md": "3"
+                        },
+                        "alignItems": "stretch"
+                      },
+                      "slots": {
+                        "children": [
+                          {
+                            "name": "product_hero"
+                          },
+                          {
+                            "name": "typography",
+                            "properties": {
+                              "variant": "body1"
+                            },
+                            "slots": {
+                              "children": [
+                                {
+                                  "name": "text",
+                                  "properties": {
+                                    "text": "SKU: "
+                                  }
+                                },
+                                {
+                                  "name": "product_attribute",
+                                  "properties": {
+                                    "variant": "sku"
+                                  }
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "name": "product_size"
+                          },
+                          {
+                            "name": "product_color"
+                          },
+                          {
+                            "name": "product_atb"
+                          },
+                          {
+                            "name": "accordion",
+                            "properties": {
+                              "title": "PRODUCT DETAILS"
+                            },
+                            "slots": {
+                              "children": [
+                                {
+                                  "name": "product_attribute",
+                                  "properties": {
+                                    "variant": "longDescription"
+                                  }
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "name": "accordion",
+                            "properties": {
+                              "title": "DELIVERIES & RETURNS"
+                            },
+                            "slots": {
+                              "children": [
+                                {
+                                  "name": "text"
+                                }
+                              ]
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "section",
+          "slots": {
+            "children": [
+              {
+                "name": "product_rich_text"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "version": 1,
+  "label": "Bootie Lemaré Black Layout",
+  "status": "ACTIVE",
+  "lastPublishedVersion": 1,
+  "lastPublishedDate": "2021-05-20T09:41:55.410Z",
+  "deliveryId": "2728e161-2989-4917-a2f3-c44762b22aec"
+}

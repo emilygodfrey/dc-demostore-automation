@@ -1,0 +1,5 @@
+{
+  "body": "./schemas/googlemaps-schema.json",
+  "schemaId": "https://amprsa.net/site/integration/googlemaps",
+  "validationLevel": "PARTIAL"
+}

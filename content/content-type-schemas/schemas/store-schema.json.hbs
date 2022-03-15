@@ -1,0 +1,112 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://amprsa.net/content/store",
+
+	"title": "Store Location",
+	"description": "Store location details",
+
+	"allOf": [
+		{
+			"$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+		}
+	],
+	
+	"trait:sortable": {
+		"sortBy": [
+			{
+				"key": "default",
+				"paths": [
+					"/locationName"
+				]
+			}
+		]
+	},
+
+	"trait:filterable": {
+		"filterBy": [
+			{
+				"paths": [
+					"/filterActive"
+				]
+			},
+			{
+				"paths": [
+					"/filterActive",
+					"/keyElements/parking"
+				]
+			}
+		]
+	},
+
+	"type": "object",
+	"properties": {
+		"filterActive": {
+			"title": "Active for Filter API",
+			"type": "boolean",
+			"default": "true"
+		},
+		"locationName": {
+			"title": "Store Name",
+			"type": "string",
+			"minLength": 0,
+			"maxLength": 64
+		},
+		"_meta": {
+			"type": "object",
+			"title": "Slug",
+			"properties": {
+				"deliveryKey": {
+					"type": "string",
+					"title": "URL slug",
+					"description": "Enter the URL slug for this store (store/*)",
+					"pattern": "store\/.*"
+				}
+			},
+			"required": [
+				"deliveryKey"
+			]
+		},
+		"locationAddress": {
+			"title": "Store Address",
+			"description": "Full address of the store",
+			"type": "string",
+			"format": "markdown",
+			"maxLength": 150
+		},
+		"keyElements": {
+			"title": "Key Store Elements",
+			"type": "object",
+			"properties": {
+				"parking": {
+					"title": "Parking",
+					"description": "Parking space avaiable",
+					"type": "boolean"
+				},
+				"clickAndCollect": {
+					"title": "Click & Collect",
+					"description": "Click & Collect available",
+					"type": "boolean"
+				},
+				"lateOpening": {
+					"title": "Late Opening",
+					"description": "Late Opening times",
+					"type": "boolean"
+				}
+			},
+			"propertyOrder": ["parking","clickAndCollect","lateOpening"]
+		},
+		"details": {
+			"title": "Store Details",
+			"type": "string",
+			"format": "markdown"
+		},
+		"image": {
+			"title": "Image",
+			"allOf": [
+				{ "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/image-link" }
+			]
+		}
+		
+	},
+	"propertyOrder": ["filterActive", "locationName", "_meta", "locationAddress", "image", "keyElements", "details"]
+}

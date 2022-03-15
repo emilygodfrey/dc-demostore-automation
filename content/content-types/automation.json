@@ -1,0 +1,18 @@
+{
+  "contentTypeUri": "https://amprsa.net/site/automation",
+  "status": "ACTIVE",
+  "settings": {
+    "label": "amprsa automation",
+    "icons": [
+      {
+        "size": 256,
+        "url": "https://cdn-icons-png.flaticon.com/512/3662/3662817.png"
+      }
+    ],
+    "visualizations": [],
+    "cards": []
+  },
+  "repositories": [
+    "sitestructure"
+  ]
+}

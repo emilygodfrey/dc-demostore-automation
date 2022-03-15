@@ -1,0 +1,5 @@
+{
+  "body": "./schemas/config-schema.json",
+  "schemaId": "https://amprsa.net/site/config",
+  "validationLevel": "CONTENT_TYPE"
+}

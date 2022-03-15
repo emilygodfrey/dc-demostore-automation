@@ -1,0 +1,32 @@
+{
+  "contentTypeUri": "https://amprsa.net/content/product-layout",
+  "status": "ACTIVE",
+  "settings": {
+    "label": "Product Layout",
+    "icons": [
+      {
+        "size": 256,
+        "url": "https://bigcontent.io/cms/icons/experience-management/exp-web.png"
+      }
+    ],
+    "visualizations": [
+      {
+        "label": "Site",
+        "templatedUri": "{{url}}/product/08328e3f-a2a6-440b-ac4a-460ccb82066e?vse=\{{vse.domain}}&realtime=true&pdpLayout=\{{content.sys.id}}&realtime=true",
+        "default": true
+      },
+      {
+        "label": "Development",
+        "templatedUri": "http://localhost:3000/product/08328e3f-a2a6-440b-ac4a-460ccb82066e?vse=\{{vse.domain}}&realtime=true&pdpLayout=\{{content.sys.id}}&realtime=true",
+        "default": false
+      },
+      {
+        "label": "JSON",
+        "templatedUri": "https://delivery-preview.visualizations.content.amplience.net?id=\{{content.sys.id}}&vse=\{{vse.domain}}&locale=\{{locales}}&hub={{cms.hub.name}}&realtime=true",
+        "default": false
+      }
+    ],
+    "cards": []
+  },
+  "repositories": [ "content", "contentfr", "contentde", "contentes", "contentit" ]
+}

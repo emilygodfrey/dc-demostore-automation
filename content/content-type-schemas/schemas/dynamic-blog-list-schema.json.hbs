@@ -1,0 +1,62 @@
+{ 
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://amprsa.net/content/dynamic-blog-list",
+
+    "title": "Dynamic Blog List",
+    "description": "",
+
+    "allOf": [{
+        "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+    }],
+
+    "type": "object",
+    "properties": {
+        "header": {
+            "title": "Header",
+            "allOf": [
+                { "$ref": "http://bigcontent.io/cms/schema/v1/localization#/definitions/localized-string" }
+            ]
+        },
+        "tags": {
+            "title": "Filters",
+            "type": "array",
+            "ui:extension": {
+                "name": "hierarchy-picker",
+                "params": {
+                    "nodeId": "{{contentMap.hierarchy-taxonomies}}",
+                    "type": "chip"
+                }
+            },
+            "items": {
+                "allOf": [{
+                        "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-reference"
+                    },
+                    {
+                        "properties": {
+                            "contentType": {
+                                "enum": [
+                                    "https://amprsa.net/site/tag"
+                                ]
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "numItems": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 12,
+            "title": "Number of Items",
+            "description": "The number of blog posts to bring back"
+        }
+    },
+
+    "propertyOrder": [
+        "header",
+        "indexName",
+        "query",
+        "numItems",
+        "component"
+    ]
+}
