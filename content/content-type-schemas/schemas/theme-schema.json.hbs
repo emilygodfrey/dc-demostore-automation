@@ -1,0 +1,59 @@
+{ 
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://amprsa.net/site/theme",
+
+	"title": "Theme",
+	"description": "",
+
+	"allOf": [
+		{
+			"$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+		}
+    ],
+
+    "trait:hierarchy": {
+		"childContentTypes": [
+            "https://amprsa.net/site/palette",
+            "https://amprsa.net/site/typography"
+        ]
+    },
+    
+    "trait:sortable": {
+        "sortBy": [
+            {
+                "key": "default",
+                "paths": [
+                    "/label"
+                ]
+            }
+        ]
+    },
+
+    "type": "object",
+    "properties": {
+        "_meta": {
+            "title": "Delivery Key",
+            "properties": {
+                "deliveryKey": {
+                    "title": "Slug",
+                    "type": "string",
+                    "pattern": "theme\/.*"
+                }
+            },
+            "required": [
+                "deliveryKey"
+            ]
+        },
+        "label": {
+            "type": "string",
+            "title": "Label"
+        }
+    },
+
+    "required": ["label"],
+    
+    "definitions": {
+
+    }
+
+}

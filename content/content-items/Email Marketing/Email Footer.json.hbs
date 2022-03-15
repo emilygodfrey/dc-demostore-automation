@@ -1,0 +1,63 @@
+{
+  "id": "77f457f3-41ef-4ccf-8f27-bf59d53bf95c",
+  "body": {
+    "_meta": {
+      "name": "Email Footer",
+      "schema": "https://amprsa.net/email/footer"
+    },
+    "logoSettings": {
+      "toggle": false,
+      "imageSrc": {
+        "_meta": {
+          "schema": "http://bigcontent.io/cms/schema/v1/core#/definitions/image-link"
+        },
+        "id": "{{dam.imagesMap.anyaFinnLogo}}",
+        "name": "anya-finn-logo",
+        "endpoint": "{{dam.mediaEndpoint}}",
+        "defaultHost": "cdn.media.amplience.net"
+      },
+      "imageProperties": {
+        "imageWidth": 140,
+        "linkUrl": "{{url}}"
+      }
+    },
+    "navSettings": {
+      "toggle": true,
+      "navigation": [
+        {
+          "color": {
+            "colors": "rgb(0, 0, 0)"
+          },
+          "text": "Women",
+          "url": "{{url}}/category/women"
+        },
+        {
+          "text": "Men",
+          "url": "{{url}}/category/men",
+          "color": {
+            "colors": "rgb(0, 0, 0)"
+          }
+        },
+        {
+          "text": "Blog",
+          "url": "{{url}}/blog",
+          "color": {
+            "colors": "rgb(0, 0, 0)"
+          }
+        }
+      ]
+    },
+    "disclaimer": {
+      "toggle": true,
+      "disclaimerText": [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent convallis fermentum sapien vitae ultricies. Suspendisse sit amet arcu lacus."
+      ]
+    }
+  },
+  "version": 1,
+  "label": "Email Footer",
+  "status": "ACTIVE",
+  "lastPublishedVersion": 1,
+  "lastPublishedDate": "2021-05-28T13:56:54.142Z",
+  "deliveryId": "77f457f3-41ef-4ccf-8f27-bf59d53bf95c"
+}

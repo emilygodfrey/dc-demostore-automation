@@ -1,0 +1,60 @@
+{
+  "id": "d5df448e-2b66-4f9a-821b-c4784ea17470",
+  "body": {
+    "_meta": {
+      "name": "Site Pages",
+      "schema": "https://amprsa.net/site/pages",
+      "deliveryKey": "homepage",
+      "hierarchy": {
+        "root": true
+      }
+    },
+    "slots": [
+      {
+        "_meta": {
+          "schema": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-reference"
+        },
+        "contentType": "https://amprsa.net/slots/personalized-banner",
+        "id": "f9e52c2b-3def-40d6-9cd8-0410024420ac"
+      },
+      {
+        "_meta": {
+          "schema": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-reference"
+        },
+        "contentType": "https://amprsa.net/slots/flexible",
+        "id": "448619b4-d05f-4911-8e3d-b0389a807566"
+      },
+      {
+        "_meta": {
+          "schema": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-reference"
+        },
+        "contentType": "https://amprsa.net/slots/localized-banner",
+        "id": "ee32e539-ebd1-40d7-9350-6cf29a727749"
+      },
+      {
+        "_meta": {
+          "schema": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-reference"
+        },
+        "contentType": "https://amprsa.net/slots/banner",
+        "id": "3b14cdf5-d50f-4b4e-a841-d430b22289fb"
+      },
+      {
+        "_meta": {
+          "schema": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-reference"
+        },
+        "contentType": "https://amprsa.net/slots/flexible",
+        "id": "5f90a15d-e0f1-4e81-80c0-1a0fa1f4d905"
+      }
+    ],
+    "title": "Site Pages"
+  },
+  "version": 1,
+  "label": "Site Pages",
+  "status": "ACTIVE",
+  "lastPublishedVersion": 1,
+  "lastPublishedDate": "2021-02-07T23:46:17.545Z",
+  "hierarchy": {
+    "root": true
+  },
+  "deliveryId": "d5df448e-2b66-4f9a-821b-c4784ea17470"
+}

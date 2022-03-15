@@ -1,0 +1,59 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://amprsa.net/site/experiences/category",
+
+	"title": "Category Experience",
+	"description": "Configure experience for pages related to this category",
+
+	"allOf": [
+		{
+			"$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+		}
+	],
+
+	"trait:hierarchy": {
+		"childContentTypes": [
+			"https://amprsa.net/site/experiences/category",
+			"https://amprsa.net/site/experiences/product"
+		]
+	},
+
+	"trait:sortable": {
+		"sortBy": [
+			{
+				"key": "default",
+				"paths": ["/priority"]
+			}
+		]
+	},
+
+	"trait:filterable": {
+		"filterBy": [
+			{
+				"paths": [
+					"/id"
+				]
+			},
+			{
+				"paths": [
+					"/id",
+					"/_meta/hierarchy/parentId"
+				]
+			}
+		]
+	},
+	
+	"type": "object",
+	"properties": {
+		"id": {
+			"type": "string",
+			"title": "Category ID"
+		},
+		"priority": {
+			"type": "number",
+			"title": "Priority"
+		},
+		"experience": { "$ref": "https://amprsa.net/site/experience#/definitions/experience" }
+	},
+	"propertyOrder": []
+}

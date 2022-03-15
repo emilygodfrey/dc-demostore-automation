@@ -1,0 +1,18 @@
+{
+  "contentTypeUri": "https://amprsa.net/site/amprsa",
+  "status": "ACTIVE",
+  "settings": {
+    "label": "amprsa config",
+    "icons": [
+      {
+        "size": 256,
+        "url": "https://cdn-icons-png.flaticon.com/512/627/627495.png"
+      }
+    ],
+    "visualizations": [],
+    "cards": []
+  },
+  "repositories": [
+    "sitestructure"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "3717797c-64d1-481a-b466-9c9c82ec441c",
+  "body": {
+    "_meta": {
+      "name": "Site Configuration",
+      "schema": "https://amprsa.net/site/config",
+      "deliveryKey": "hierarchy/configuration",
+      "hierarchy": {
+        "root": true
+      }
+    },
+    "type": "Site Configuration"
+  },
+  "version": 1,
+  "label": "Site Configuration",
+  "status": "ACTIVE",
+  "lastPublishedVersion": 1,
+  "lastPublishedDate": "2021-02-07T23:16:42.255Z",
+  "hierarchy": {
+    "root": true
+  },
+  "deliveryId": "3717797c-64d1-481a-b466-9c9c82ec441c"
+}

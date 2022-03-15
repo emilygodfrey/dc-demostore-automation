@@ -1,0 +1,47 @@
+{
+  "contentTypeUri": "https://amprsa.net/content/theme-wrapper",
+  "status": "ACTIVE",
+  "settings": {
+    "label": "Theme Wrapper",
+    "icons": [
+      {
+        "size": 256,
+        "url": "https://bigcontent.io/cms/icons/experience-management/exp-page.png"
+      }
+    ],
+    "visualizations": [
+      {
+        "label": "JSON",
+        "templatedUri": "https://delivery-preview.visualizations.content.amplience.net?id=\{{content.sys.id}}&vse=\{{vse.domain}}&locale=\{{locales}}&hub={{cms.hub.name}}&realtime=true",
+        "default": false
+      },
+      {
+        "label": "Development",
+        "templatedUri": "http://localhost:3000/cms/visualization?content=\{{content.sys.id}}&vse=\{{vse.domain}}&locale=\{{locales}}&realtime=true",
+        "default": false
+      },
+      {
+        "label": "Site",
+        "templatedUri": "{{url}}/visualization?content=\{{content.sys.id}}&vse=\{{vse.domain}}&realtime=true",
+        "default": true
+      },
+      {
+        "label": "QR for mobile",
+        "templatedUri": "{{url}}/visualization/qr?vse=\{{vse.domain}}&content=\{{content.sys.id}}&locale=\{{locales}}",
+        "default": false
+      },
+      {
+        "label": "Content",
+        "templatedUri": "{{url}}/visualization/standalone?content=\{{content.sys.id}}&vse=\{{vse.domain}}&realtime=true",
+        "default": false
+      }
+    
+    ],
+    "cards": [
+      {
+        "templatedUri": "{{url}}/visualization/standalone?content=\{{content.sys.id}}&vse=\{{vse.domain}}"
+      }
+    ]
+  },
+  "repositories": [ "content", "contentfr", "contentde", "contentes", "contentit" ]
+}

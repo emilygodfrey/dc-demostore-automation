@@ -1,0 +1,26 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://amprsa.net/site/integration/googlemaps",
+
+	"title": "Google Maps Integration Config",
+	"description": "",
+
+	"definitions": {
+		"config": {
+			"title": "Google Maps configuration",
+			"type": "object",
+			"properties": {
+				"apiKey": {
+					"title": "Google Maps API Key",
+					"type": "string",
+					"minLength": 0,
+					"maxLength": 100
+				}
+			},
+			"propertyOrder": [
+				"apiKey"
+			]
+		}
+		
+	}
+}

@@ -1,0 +1,52 @@
+{
+  "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
+  "id": "https://amprsa.net/slots/flexible",
+  "title": "Flexible Slot",
+  "description": "Slot that allows a number of any content type",
+  "allOf": [
+    {
+      "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+    }
+  ],
+  "type": "object",
+  "properties": {
+    "contentTypes": {
+      "type": "array",
+      "title": "Content Type",
+      "description": "Select and order content to display in the page",
+      "items": {
+        "allOf": [
+          {
+            "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"
+          },
+          {
+            "properties": {
+              "contentType": {
+                "title": "",
+                "enum": [
+                  "https://amprsa.net/content/simple-banner",
+                  "https://amprsa.net/content/simple-localized-banner",
+                  "https://amprsa.net/content/blog",
+                  "https://amprsa.net/content/blog-list",
+                  "https://amprsa.net/content/card",
+                  "https://amprsa.net/content/card-list",
+                  "https://amprsa.net/content/curated-product-grid",
+                  "https://amprsa.net/content/rich-text",
+                  "https://amprsa.net/content/product-grid",
+                  "https://amprsa.net/content/html",
+                  "https://amprsa.net/content/image",
+                  "https://amprsa.net/content/slider",
+                  "https://amprsa.net/content/split-block",
+                  "https://amprsa.net/content/text",
+                  "https://amprsa.net/content/video",
+                  "https://amprsa.net/content/container",
+                  "https://amprsa.net/content/dynamic-blog-list"
+                ]
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "contentTypeUri": "https://amprsa.net/site/pages",
+  "status": "ACTIVE",
+  "settings": {
+    "label": "Site Pages",
+    "icons": [
+      {
+        "size": 256,
+        "url": "https://bigcontent.io/cms/icons/experience-management/exp-page.png"
+      }
+    ],
+    "visualizations": [
+      {
+        "label": "Website",
+        "templatedUri": "{{url}}/?vse=\{{vse.domain}}&realtime=true",
+        "default": true
+      },
+      {
+        "label": "Development",
+        "templatedUri": "http://localhost:3000/?vse=\{{vse.domain}}&realtime=true",
+        "default": false
+      },
+      {
+        "label": "QR for Mobile",
+        "templatedUri": "{{url}}/visualization/qr?vse=\{{vse.domain}}&content=\{{content.sys.id}}&locale=\{{locales}}&realtime=true",
+        "default": false
+      },
+      {
+        "label": "JSON",
+        "templatedUri": "https://delivery-preview.visualizations.content.amplience.net?id=\{{content.sys.id}}&vse=\{{vse.domain}}&locale=\{{locales}}&hub={{cms.hub.name}}&realtime=true",
+        "default": false
+      }
+    ],
+    "cards": []
+  },
+  "repositories": [ "sitestructure" ]
+}

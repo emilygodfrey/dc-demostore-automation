@@ -1,0 +1,95 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://amprsa.net/site/integration/amplience",
+
+	"title": "Amplience Integration Config",
+	"description": "",
+
+	"definitions": {
+		"config": {
+			"title": "Amplience configuration",
+			"type": "object",
+			"properties": {
+				"hub": {
+					"title": "Main hub",
+					"type": "object",
+					"allOf": [{ "$ref": "#/definitions/hub" }]
+				},
+				"hubs": {
+					"title": "Alternate hubs",
+					"type": "array",
+					"items": { "$ref": "#/definitions/hub-pointer" }
+				}
+			}
+		},
+		"hub": {
+			"title": "Amplience hub configuration",
+			"type": "object",
+			"properties": {
+				"name": {
+					"title": "Hub name",
+					"type": "string",
+					"description": "cms.hub.name",
+					"minLength": 0,
+					"maxLength": 40
+				},
+				"stagingApi": {
+					"title": "Staging API",
+					"type": "string",
+					"description": "cms.hub.stagingApi",
+					"minLength": 0,
+					"maxLength": 100
+				}		
+			}
+		},
+		"hub-pointer": {
+			"title": "Amplience hub pointer",
+			"type": "object",
+			"properties": {
+				"key": {
+					"title": "Hub lookup key",
+					"type": "string",
+					"default": "default",
+					"minLength": 0,
+					"maxLength": 40
+				},
+				"name": {
+					"title": "Hub name",
+					"type": "string",
+					"description": "cms.hubs.<key>.name",
+					"minLength": 0,
+					"maxLength": 40
+				}
+			}
+		},
+		"dam-assets": {
+			"title": "DAM asset store",
+			"type": "object",
+			"properties": {
+				"source": {
+					"type": "object",
+					"properties": {
+						"type": {
+							"title": "Store type",
+							"type": "string",
+							"minLength": 0,
+							"maxLength": 40
+						},
+						"bucket": {
+							"title": "Bucket name",
+							"type": "string",
+							"minLength": 0,
+							"maxLength": 100
+						},
+						"region": {
+							"title": "Bucket region",
+							"type": "string",
+							"minLength": 0,
+							"maxLength": 20
+						}
+					}				
+				}
+			}
+		}
+	}
+}

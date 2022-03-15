@@ -1,0 +1,40 @@
+{ 
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://amprsa.net/slots/banner",
+
+	"title": "Banner Slot",
+	"description": "A slot to contain a Banner.",
+
+	"allOf": [
+		{
+			"$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+		}
+	],
+	
+	"type": "object",
+	"properties": {
+		"content": {
+            "title": "Content",
+            "allOf": [
+              {
+                "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"
+              },
+              {
+                "properties": {
+                  "contentType": {
+                    "title": "contentType",
+                    "enum": [
+                      "https://amprsa.net/content/simple-banner",
+                      "https://amprsa.net/content/simple-localized-banner",
+                      "https://amprsa.net/content/container",
+                      "https://amprsa.net/content/slider",
+                      "https://amprsa.net/content/video"
+                    ]
+                  }
+                }
+              }
+            ]
+          }
+	},
+	"propertyOrder": []
+}

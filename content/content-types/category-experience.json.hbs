@@ -1,0 +1,27 @@
+{
+  "contentTypeUri": "https://amprsa.net/site/experiences/category",
+  "status": "ACTIVE",
+  "settings": {
+    "label": "Category Experience",
+    "icons": [
+      {
+        "size": 256,
+        "url": "https://bigcontent.io/cms/icons/experience-management/exp-web.png"
+      }
+    ],
+    "visualizations": [
+      {
+        "label": "Sitemap",
+        "templatedUri": "{{url}}/sitemap?vse=\{{vse.domain}}",
+        "default": true
+      },
+      {
+        "label": "Development",
+        "templatedUri": "http://localhost:3000/sitemap?vse=\{{vse.domain}}",
+        "default": false
+      }
+    ],
+    "cards": []
+  },
+  "repositories": [ "sitestructure" ]
+}

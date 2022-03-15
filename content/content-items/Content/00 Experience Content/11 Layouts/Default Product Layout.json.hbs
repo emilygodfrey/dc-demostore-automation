@@ -1,0 +1,176 @@
+{
+  "id": "e3865cbd-2de8-4dc0-a974-15b3d45603d8",
+  "body": {
+    "_meta": {
+      "name": "Example",
+      "schema": "https://amprsa.net/content/product-layout",
+      "deliveryKey": "layout/default-pdp"
+    },
+    "slots": {
+      "main": [
+        {
+          "name": "section",
+          "properties": {
+            "variant": "default",
+            "title": ""
+          },
+          "slots": {
+            "title": [
+              {
+                "name": "typography",
+                "properties": {
+                  "variant": "h2"
+                },
+                "slots": {
+                  "children": [
+                    {
+                      "name": "product_attribute",
+                      "properties": {
+                        "variant": "header"
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "children": [
+              {
+                "name": "grid",
+                "properties": {
+                  "direction": "row",
+                  "type": "container",
+                  "spacing": "2"
+                },
+                "slots": {
+                  "children": [
+                    {
+                      "name": "grid",
+                      "properties": {
+                        "type": "item",
+                        "breakpoints": {
+                          "xs": "12",
+                          "md": "9"
+                        },
+                        "direction": "column"
+                      },
+                      "slots": {
+                        "children": [
+                          {
+                            "name": "product_image_viewer",
+                            "properties": {
+                              "variant": "portrait",
+                              "numItems": "2"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "name": "grid",
+                      "properties": {
+                        "direction": "column",
+                        "justify": "flex-start",
+                        "type": "item",
+                        "breakpoints": {
+                          "xs": "12",
+                          "md": "3"
+                        },
+                        "alignItems": "stretch"
+                      },
+                      "slots": {
+                        "children": [
+                          {
+                            "name": "product_hero"
+                          },
+                          {
+                            "name": "typography",
+                            "properties": {
+                              "variant": "body1"
+                            },
+                            "slots": {
+                              "children": [
+                                {
+                                  "name": "text",
+                                  "properties": {
+                                    "text": "SKU: "
+                                  }
+                                },
+                                {
+                                  "name": "product_attribute",
+                                  "properties": {
+                                    "variant": "sku"
+                                  }
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "name": "product_color"
+                          },
+                          {
+                            "name": "product_size"
+                          },
+                          {
+                            "name": "product_atb"
+                          },
+                          {
+                            "name": "accordion",
+                            "properties": {
+                              "title": "PRODUCT DETAILS"
+                            },
+                            "slots": {
+                              "children": [
+                                {
+                                  "name": "product_attribute",
+                                  "properties": {
+                                    "variant": "longDescription"
+                                  }
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "name": "accordion",
+                            "properties": {
+                              "title": "DELIVERIES & RETURNS"
+                            },
+                            "slots": {
+                              "children": [
+                                {
+                                  "name": "text"
+                                }
+                              ]
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "section",
+          "slots": {
+            "children": [
+              {
+                "name": "product_rich_text",
+                "properties": {
+                  "variant": "text"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "version": 1,
+  "label": "Default Product Layout",
+  "status": "ACTIVE",
+  "lastPublishedVersion": 1,
+  "lastPublishedDate": "2021-05-20T09:38:02.428Z",
+  "deliveryId": "e3865cbd-2de8-4dc0-a974-15b3d45603d8"
+}

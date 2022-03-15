@@ -1,0 +1,12 @@
+node_modules
+.DS_Store
+
+repositories/
+provisioning.yaml
+integration.yaml
+settings.yaml
+settings.yaml.backup
+spec.yaml.vm
+
+hub-mapping.json
+workflow-states-mapping.json
