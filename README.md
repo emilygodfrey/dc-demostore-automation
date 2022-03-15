@@ -118,3 +118,4 @@ Files that end in `.hbs` are Handlebars templates, and can use the context that 
 - `cms.hub.name`
 
     hub name
+ 
