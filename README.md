@@ -91,7 +91,7 @@ The root folder for automation content is `content`.  Let's dig in to what's ins
 
 ## Handlebars template substitution
 
-Files that end in `.hbs` are Handlebars templates, and can use the context that `amprsa` passes in to it. Here are several examples of templated variables used:
+Files that end in `.hbs` are Handlebars templates, and can use the context that `demostore` passes in to it. Here are several examples of templated variables used:
 
 - `dam.imagesMap.<key>`
 

@@ -2,7 +2,7 @@
   "contentTypeUri": "https://demostore.amplience.com/site/demostoreconfig",
   "status": "ACTIVE",
   "settings": {
-    "label": "amprsa config",
+    "label": "demostore config",
     "icons": [
       {
         "size": 256,

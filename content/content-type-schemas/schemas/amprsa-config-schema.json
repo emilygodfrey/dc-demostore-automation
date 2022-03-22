@@ -2,7 +2,7 @@
 	"$schema": "http://json-schema.org/draft-07/schema#",
 	"$id": "https://demostore.amplience.com/site/demostoreconfig",
 
-	"title": "amprsa config",
+	"title": "demostore config",
 	"description": "Describes a storefront integration configuration.",
 
 	"allOf": [
