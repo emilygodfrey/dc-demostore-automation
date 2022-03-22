@@ -1,9 +1,9 @@
 {
-  "name": "@amplience/amp-rsa-automation",
-  "version": "0.0.2",
+  "name": "@amplience/dc-demostore-automation",
+  "version": "1.0.0",
   "private": false,
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/amplience/amp-rsa-automation.git"
+    "url": "git+https://github.com/amplience/dc-demostore-automation.git"
   }
 }

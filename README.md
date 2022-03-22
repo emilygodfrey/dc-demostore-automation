@@ -1,12 +1,6 @@
-# Amplience Reference Storefront Architecture – Core Automation Files
+# Amplience Demo Store – Core Automation Files
 
-amp-rsa-automation
-
-This package is used by the [amprsa cli](https://github.com/amplience/amp-rsa-cli) to set up data for use with [Amplience Reference Storefront Architecture](https://github.com/amplience/amp-rsa-core).
-
-<!--
-TODO: Update references to Amplience Github (https://github.com/amplience/amp-rsa-core)
--->
+This package is used by the [dc-demostore-cli](https://github.com/amplience/dc-demostore-cli) to set up data for use with [Amplience Demo Store Core](https://github.com/amplience/dc-demostore-core).
 
 The files in this project will configure a working demonstration environment with sample schemas, content types, content, slots, partials, extensions and...
 
