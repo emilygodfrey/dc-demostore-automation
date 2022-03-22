@@ -49,7 +49,9 @@
 					"properties": {
 						"contentType": {
 							"enum": [
-								"https://amprsa.net/site/integration/rest"
+								"https://amprsa.net/site/integration/rest",
+								"https://amprsa.net/site/integration/commercetools",
+								"https://amprsa.net/site/integration/elasticpath"
 							]
 						}
 					}
