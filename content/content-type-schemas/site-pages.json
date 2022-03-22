@@ -1,5 +1,5 @@
 {
   "body": "./schemas/site-pages-schema.json",
-  "schemaId": "https://amprsa.net/site/pages",
+  "schemaId": "https://demostore.amplience.com/site/pages",
   "validationLevel": "CONTENT_TYPE"
 }

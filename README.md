@@ -9,7 +9,7 @@ TABLE OF CONTENTS
 - Process for Import / Export
 
 ## Media Dependencies
-This automation is dependant on related media in the Amplience DAM (Content Hub).
+This automation is dependent on related media in the Amplience DAM (Content Hub).
 
 If you account does not come with any existing media, please upload all assets in the 'Media' folder in this repository to your content hub before running any automation.
 

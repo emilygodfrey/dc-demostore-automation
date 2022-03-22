@@ -1,6 +1,6 @@
 { 
 	"$schema": "http://json-schema.org/draft-07/schema#",
-	"$id": "https://amprsa.net/site/config",
+	"$id": "https://demostore.amplience.com/site/config",
 
 	"title": "Site Configuration",
 	"description": "Site configuration. Contains common UI elements and themes.",
@@ -13,8 +13,8 @@
 
     "trait:hierarchy": {
 		"childContentTypes": [
-            "https://amprsa.net/site/ui",
-            "https://amprsa.net/site/theme-group"
+            "https://demostore.amplience.com/site/ui",
+            "https://demostore.amplience.com/site/theme-group"
         ]
     },
 	

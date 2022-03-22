@@ -1,6 +1,6 @@
 {
 	"$schema": "http://json-schema.org/draft-07/schema#",
-	"$id": "https://amprsa.net/site/amprsa",
+	"$id": "https://demostore.amplience.com/site/demostoreconfig",
 
 	"title": "amprsa config",
 	"description": "Describes a storefront integration configuration.",
@@ -29,17 +29,17 @@
 		"algolia": {
 			"title": "Algolia configuration",
 			"type": "object",
-			"allOf": [{ "$ref": "https://amprsa.net/site/integration/algolia#/definitions/config" }]
+			"allOf": [{ "$ref": "https://demostore.amplience.com/site/integration/algolia#/definitions/config" }]
 		},
 		"cms": {
 			"title": "Amplience configuration",
 			"type": "object",
-			"allOf": [{ "$ref": "https://amprsa.net/site/integration/amplience#/definitions/config" }]
+			"allOf": [{ "$ref": "https://demostore.amplience.com/site/integration/amplience#/definitions/config" }]
 		},
 		"googlemaps": {
 			"title": "Google Maps configuration",
 			"type": "object",
-			"allOf": [{ "$ref": "https://amprsa.net/site/integration/googlemaps#/definitions/config" }]
+			"allOf": [{ "$ref": "https://demostore.amplience.com/site/integration/googlemaps#/definitions/config" }]
 		},
 		"commerce": {
 			"title": "Commerce integration",
@@ -49,9 +49,9 @@
 					"properties": {
 						"contentType": {
 							"enum": [
-								"https://amprsa.net/site/integration/rest",
-								"https://amprsa.net/site/integration/commercetools",
-								"https://amprsa.net/site/integration/elasticpath"
+								"https://demostore.amplience.com/site/integration/rest",
+								"https://demostore.amplience.com/site/integration/commercetools",
+								"https://demostore.amplience.com/site/integration/elasticpath"
 							]
 						}
 					}

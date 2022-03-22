@@ -3,7 +3,7 @@
   "body": {
     "_meta": {
       "name": "Site Configuration",
-      "schema": "https://amprsa.net/site/config",
+      "schema": "https://demostore.amplience.com/site/config",
       "deliveryKey": "hierarchy/configuration",
       "hierarchy": {
         "root": true

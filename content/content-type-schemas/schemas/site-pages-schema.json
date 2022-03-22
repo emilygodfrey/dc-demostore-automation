@@ -1,6 +1,6 @@
 { 
 	"$schema": "http://json-schema.org/draft-07/schema#",
-	"$id": "https://amprsa.net/site/pages",
+	"$id": "https://demostore.amplience.com/site/pages",
 
 	"title": "Site Pages",
 	"description": "",
@@ -13,9 +13,9 @@
     
     "trait:hierarchy": {
 		"childContentTypes": [
-            "https://amprsa.net/site/pages/category",
-            "https://amprsa.net/site/pages/landing",
-            "https://amprsa.net/site/pages/external"
+            "https://demostore.amplience.com/site/pages/category",
+            "https://demostore.amplience.com/site/pages/landing",
+            "https://demostore.amplience.com/site/pages/external"
         ]
     },
 	
@@ -46,7 +46,7 @@
                     { "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-reference" },
                     {
                         "properties": {
-                            "contentType": { "$ref": "https://amprsa.net/lib/components#/definitions/anySlot" }
+                            "contentType": { "$ref": "https://demostore.amplience.com/lib/components#/definitions/anySlot" }
                         }
                     }
                 ]

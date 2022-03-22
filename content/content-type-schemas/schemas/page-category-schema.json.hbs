@@ -1,6 +1,6 @@
 { 
 	"$schema": "http://json-schema.org/draft-07/schema#",
-	"$id": "https://amprsa.net/site/pages/category",
+	"$id": "https://demostore.amplience.com/site/pages/category",
 
 	"title": "Category Page",
 	"description": "",
@@ -13,8 +13,8 @@
     
     "trait:hierarchy": {
 		"childContentTypes": [
-            "https://amprsa.net/site/page-group",
-            "https://amprsa.net/site/pages/category"
+            "https://demostore.amplience.com/site/page-group",
+            "https://demostore.amplience.com/site/pages/category"
         ]
     },
 
@@ -48,7 +48,7 @@
             "description": "Hide Product List for a Category Landing Page for instance.",
             "type": "boolean"
         },
-        "menu": { "$ref": "https://amprsa.net/lib/menu#/definitions/menuItemConfig" },
+        "menu": { "$ref": "https://demostore.amplience.com/lib/menu#/definitions/menuItemConfig" },
         "components": {
             "title": "Components",
             "type": "array",
@@ -58,7 +58,7 @@
                     { "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link" },
                     {
                         "properties": {
-                            "contentType": { "$ref": "https://amprsa.net/lib/components#/definitions/anyComponent" }
+                            "contentType": { "$ref": "https://demostore.amplience.com/lib/components#/definitions/anyComponent" }
                         }
                     }
                 ]
@@ -73,7 +73,7 @@
                     { "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-reference" },
                     {
                         "properties": {
-                            "contentType": { "$ref": "https://amprsa.net/lib/components#/definitions/anySlot" }
+                            "contentType": { "$ref": "https://demostore.amplience.com/lib/components#/definitions/anySlot" }
                         }
                     }
                 ]

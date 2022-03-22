@@ -3,7 +3,7 @@
   "body": {
     "_meta": {
       "name": "Taxonomies",
-      "schema": "https://amprsa.net/site/tag-group",
+      "schema": "https://demostore.amplience.com/site/tag-group",
       "deliveryKey": "hierarchy/taxonomies",
       "hierarchy": {
         "root": true

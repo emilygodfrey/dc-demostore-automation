@@ -3,7 +3,7 @@
   "body": {
     "_meta": {
       "name": "Site Pages",
-      "schema": "https://amprsa.net/site/pages",
+      "schema": "https://demostore.amplience.com/site/pages",
       "deliveryKey": "homepage",
       "hierarchy": {
         "root": true
@@ -14,35 +14,35 @@
         "_meta": {
           "schema": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-reference"
         },
-        "contentType": "https://amprsa.net/slots/personalized-banner",
+        "contentType": "https://demostore.amplience.com/slots/personalized-banner",
         "id": "f9e52c2b-3def-40d6-9cd8-0410024420ac"
       },
       {
         "_meta": {
           "schema": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-reference"
         },
-        "contentType": "https://amprsa.net/slots/flexible",
+        "contentType": "https://demostore.amplience.com/slots/flexible",
         "id": "448619b4-d05f-4911-8e3d-b0389a807566"
       },
       {
         "_meta": {
           "schema": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-reference"
         },
-        "contentType": "https://amprsa.net/slots/localized-banner",
+        "contentType": "https://demostore.amplience.com/slots/localized-banner",
         "id": "ee32e539-ebd1-40d7-9350-6cf29a727749"
       },
       {
         "_meta": {
           "schema": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-reference"
         },
-        "contentType": "https://amprsa.net/slots/banner",
+        "contentType": "https://demostore.amplience.com/slots/banner",
         "id": "3b14cdf5-d50f-4b4e-a841-d430b22289fb"
       },
       {
         "_meta": {
           "schema": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-reference"
         },
-        "contentType": "https://amprsa.net/slots/flexible",
+        "contentType": "https://demostore.amplience.com/slots/flexible",
         "id": "5f90a15d-e0f1-4e81-80c0-1a0fa1f4d905"
       }
     ],

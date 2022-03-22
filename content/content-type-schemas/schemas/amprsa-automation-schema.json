@@ -1,6 +1,6 @@
 {
 	"$schema": "http://json-schema.org/draft-07/schema#",
-	"$id": "https://amprsa.net/site/automation",
+	"$id": "https://demostore.amplience.com/site/automation",
 
 	"title": "amprsa automation",
 	"description": "Intended to automate mapping.json. This holds mappings from imported content item IDs to current content item IDs.",

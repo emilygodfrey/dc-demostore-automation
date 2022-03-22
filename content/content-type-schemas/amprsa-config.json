@@ -1,5 +1,5 @@
 {
   "body": "./schemas/amprsa-config-schema.json",
-  "schemaId": "https://amprsa.net/site/amprsa",
+  "schemaId": "https://demostore.amplience.com/site/demostoreconfig",
   "validationLevel": "CONTENT_TYPE"
 }

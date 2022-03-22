@@ -1,5 +1,5 @@
 {
-  "contentTypeUri": "https://amprsa.net/site/integration/commercetools",
+  "contentTypeUri": "https://demostore.amplience.com/site/integration/commercetools",
   "status": "ACTIVE",
   "settings": {
     "label": "Commercetools credentials",

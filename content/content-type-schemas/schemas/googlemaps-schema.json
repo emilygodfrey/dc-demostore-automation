@@ -1,6 +1,6 @@
 {
 	"$schema": "http://json-schema.org/draft-07/schema#",
-	"$id": "https://amprsa.net/site/integration/googlemaps",
+	"$id": "https://demostore.amplience.com/site/integration/googlemaps",
 
 	"title": "Google Maps Integration Config",
 	"description": "",
