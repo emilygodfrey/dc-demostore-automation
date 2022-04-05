@@ -2,7 +2,7 @@
     "contentTypeUri": "https://demostore.amplience.com/site/integration/fabric",
     "status": "ACTIVE",
     "settings": {
-      "label": "Fabric credentials",
+      "label": "Fabric integration",
       "icons": [
         {
           "size": 256,

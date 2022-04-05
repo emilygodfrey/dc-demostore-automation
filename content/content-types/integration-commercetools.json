@@ -2,7 +2,7 @@
   "contentTypeUri": "https://demostore.amplience.com/site/integration/commercetools",
   "status": "ACTIVE",
   "settings": {
-    "label": "Commercetools credentials",
+    "label": "Commercetools integration",
     "icons": [
       {
         "size": 256,

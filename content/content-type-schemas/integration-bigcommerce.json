@@ -1,0 +1,5 @@
+{
+  "body": "./schemas/integration-bigcommerce-schema.json",
+  "schemaId": "https://demostore.amplience.com/site/integration/bigcommerce",
+  "validationLevel": "CONTENT_TYPE"
+}

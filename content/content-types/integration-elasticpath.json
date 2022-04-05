@@ -2,7 +2,7 @@
   "contentTypeUri": "https://demostore.amplience.com/site/integration/elasticpath",
   "status": "ACTIVE",
   "settings": {
-    "label": "Elasticpath credentials",
+    "label": "Elasticpath integration",
     "icons": [
       {
         "size": 256,

@@ -1,8 +1,8 @@
 {
 	"$schema": "http://json-schema.org/draft-07/schema#",
-	"$id": "https://demostore.amplience.com/site/integration/commercetools",
+	"$id": "https://demostore.amplience.com/site/integration/elasticpath",
 
-	"title": "Commercetools credentials",
+	"title": "Elasticpath integration",
 	"description": "Description",
 
 	"allOf": [
@@ -23,7 +23,7 @@
 			"title": "Client secret",
 			"type": "string",
 			"minLength": 0,
-			"maxLength": 50
+			"maxLength": 200
 		},
 		"auth_url": {
 			"title": "OAuth URL",
@@ -32,30 +32,30 @@
 			"maxLength": 50
 		},
 		"api_url": {
-			"title": "API URL",
+			"title": "API Base URL",
 			"type": "string",
 			"minLength": 0,
 			"maxLength": 50
 		},
-		"project": {
-			"title": "Project key",
+		"pcm_url": {
+			"title": "PCM URL",
 			"type": "string",
 			"minLength": 0,
 			"maxLength": 50
 		},
-		"scope": {
-			"title": "Scope",
+		"catalog_name": {
+			"title": "Catalog name",
 			"type": "string",
 			"minLength": 0,
 			"maxLength": 50
 		}
 	},
 	"propertyOrder": [
-		"project",
 		"client_id",
 		"client_secret",
 		"auth_url",
 		"api_url",
-		"scope"
+		"pcm_url",
+		"catalog_name"
 	]
 }
