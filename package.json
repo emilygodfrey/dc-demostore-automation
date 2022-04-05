@@ -2,6 +2,20 @@
   "name": "@amplience/dc-demostore-automation",
   "version": "1.0.0",
   "private": false,
+  "keywords": [
+    "amplience",
+    "headless",
+    "cms",
+    "demo",
+    "demostore",
+    "automation"
+  ],
+  "author": "Amplience Innovation Team",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/amplience/dc-demostore-automation/issues"
+  },
+  "homepage": "https://github.com/amplience/dc-demostore-automation#readme",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/amplience/dc-demostore-automation.git"
