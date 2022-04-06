@@ -1,0 +1,18 @@
+{
+  "contentTypeUri": "https://demostore.amplience.com/site/integration/sfcc",
+  "status": "ACTIVE",
+  "settings": {
+    "label": "SFCC integration",
+    "icons": [
+      {
+        "size": 256,
+        "url": "https://www.pikpng.com/pngl/b/321-3219605_salesforce-logo-png-clipart.png"
+      }
+    ],
+    "visualizations": [],
+    "cards": []
+  },
+  "repositories": [
+    "sitestructure"
+  ]
+}
