@@ -19,6 +19,18 @@
 			"minLength": 0,
 			"maxLength": 100
 		},
+		"auth_url": {
+			"title": "Oauth URL",
+			"type": "string",
+			"minLength": 0,
+			"maxLength": 100
+		},
+		"api_token": {
+			"title": "Shopper API token",
+			"type": "string",
+			"minLength": 0,
+			"maxLength": 100
+		},
 		"site_id": {
 			"title": "Site ID",
 			"type": "string",
@@ -30,11 +42,20 @@
 			"type": "string",
 			"minLength": 0,
 			"maxLength": 50
+		},
+		"client_secret": {
+			"title": "Client secret",
+			"type": "string",
+			"minLength": 0,
+			"maxLength": 100
 		}
 	},
 	"propertyOrder": [
 		"api_url",
+		"auth_url",
+		"api_token",
 		"site_id",
-		"client_id"
+		"client_id",
+		"client_secret"
 	]
 }
