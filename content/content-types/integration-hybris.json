@@ -1,0 +1,18 @@
+{
+  "contentTypeUri": "https://demostore.amplience.com/site/integration/hybris",
+  "status": "ACTIVE",
+  "settings": {
+    "label": "Hybris integration",
+    "icons": [
+      {
+        "size": 256,
+        "url": "https://images.squarespace-cdn.com/content/v1/54dd763ce4b01f6b05bab7db/1511645929126-9BGFQ3VFVOQX75PHZ7JS/logos-014__2_.png"
+      }
+    ],
+    "visualizations": [],
+    "cards": []
+  },
+  "repositories": [
+    "sitestructure"
+  ]
+}

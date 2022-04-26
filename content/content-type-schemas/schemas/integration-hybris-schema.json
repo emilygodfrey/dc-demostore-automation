@@ -1,0 +1,33 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://demostore.amplience.com/site/integration/hybris",
+
+	"title": "Hybris integration",
+	"description": "Description",
+
+	"allOf": [
+		{
+			"$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+		}
+	],
+	
+	"type": "object",
+	"properties": {
+		"api_url": {
+			"title": "API Base URL",
+			"type": "string",
+			"minLength": 0,
+			"maxLength": 50
+		},
+		"catalog_id": {
+			"title": "Catalog ID",
+			"type": "string",
+			"minLength": 0,
+			"maxLength": 50
+		}
+	},
+	"propertyOrder": [
+		"api_url",
+		"catalog_id"
+	]
+}
