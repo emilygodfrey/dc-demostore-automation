@@ -1,5 +1,0 @@
-{
-  "body": "./schemas/googlemaps-schema.json",
-  "schemaId": "https://demostore.amplience.com/site/integration/googlemaps",
-  "validationLevel": "PARTIAL"
-}

@@ -36,11 +36,6 @@
 			"type": "object",
 			"allOf": [{ "$ref": "https://demostore.amplience.com/site/integration/amplience#/definitions/config" }]
 		},
-		"googlemaps": {
-			"title": "Google Maps configuration",
-			"type": "object",
-			"allOf": [{ "$ref": "https://demostore.amplience.com/site/integration/googlemaps#/definitions/config" }]
-		},
 		"commerce": {
 			"title": "Commerce integration",
 			"allOf": [
@@ -49,13 +44,7 @@
 					"properties": {
 						"contentType": {
 							"enum": [
-								"https://demostore.amplience.com/site/integration/rest",
-								"https://demostore.amplience.com/site/integration/commercetools",
-								"https://demostore.amplience.com/site/integration/bigcommerce",
-								"https://demostore.amplience.com/site/integration/elasticpath",
-								"https://demostore.amplience.com/site/integration/sfcc",
-								"https://demostore.amplience.com/site/integration/hybris",
-								"https://demostore.amplience.com/site/integration/fabric"
+								"https://demostore.amplience.com/site/integration/rest"
 							]
 						}
 					}
@@ -67,8 +56,7 @@
 		"environment",
 		"url",
 		"cms",
-		"commerce",
 		"algolia",
-		"googlemaps"
+		"commerce"
 	]
 }
