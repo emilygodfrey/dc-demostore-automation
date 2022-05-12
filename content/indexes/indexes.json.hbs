@@ -1,7 +1,7 @@
 [
   {
     "indexDetails": {
-      "name": "{{cms.hub.name}}.blog-production",
+      "name": "{{cms.hub}}.blog-production",
       "suffix": "blog-production",
       "label": "blog-production",
       "type": "PRODUCTION",
@@ -61,12 +61,12 @@
       ]
     },
     "replicasSettings": [],
-    "activeContentWebhook": "{\n    \"locale\": \"\{{default payload.locale \"en-US\"}}\",\n    \{{#withDeliveryContentItem contentItemId=payload.rootContentItem.id account=\"{{cms.hub.name}}\" stagingEnvironment=\"{{cms.hub.stagingApi}}\" snapshotId=payload.id}}\n    \"_meta\": \{{{JSONstringify _meta}}},\n    \"snippet\": \{{{JSONstringify snippet}}},\n    \"dateAsTimeStamp\": \{{{moment snippet.blogdate format=\"X\"}}}\n    \{{/withDeliveryContentItem}}\n}",
+    "activeContentWebhook": "{\n    \"locale\": \"\{{default payload.locale \"en-US\"}}\",\n    \{{#withDeliveryContentItem contentItemId=payload.rootContentItem.id account=\"{{cms.hub}}\" stagingEnvironment=\"{{cms.stagingApi}}\" snapshotId=payload.id}}\n    \"_meta\": \{{{JSONstringify _meta}}},\n    \"snippet\": \{{{JSONstringify snippet}}},\n    \"dateAsTimeStamp\": \{{{moment snippet.blogdate format=\"X\"}}}\n    \{{/withDeliveryContentItem}}\n}",
     "archivedContentWebhook": ""
   },
   {
     "indexDetails": {
-      "name": "{{cms.hub.name}}.blog-staging",
+      "name": "{{cms.hub}}.blog-staging",
       "suffix": "blog-staging",
       "label": "blog-staging",
       "type": "STAGING",
@@ -126,7 +126,7 @@
       ]
     },
     "replicasSettings": [],
-    "activeContentWebhook": "{\n  \"locale\": \"\{{default payload.locale \"en-US\"}}\",\n  \{{#withDeliveryContentItem contentItemId=payload.id account=\"{{cms.hub.name}}\" stagingEnvironment=\"{{cms.hub.stagingApi}}\" mediaHost=\"{{cms.hub.stagingApi}}\"}}\n  \"_meta\": \{{{JSONstringify _meta}}},\n  \"snippet\": \{{{JSONstringify snippet}}},\n\t\"dateAsTimeStamp\": \{{{moment snippet.blogdate format=\"X\"}}}\n  \{{/withDeliveryContentItem}}\n}",
+    "activeContentWebhook": "{\n  \"locale\": \"\{{default payload.locale \"en-US\"}}\",\n  \{{#withDeliveryContentItem contentItemId=payload.id account=\"{{cms.hub}}\" stagingEnvironment=\"{{cms.stagingApi}}\" mediaHost=\"{{cms.stagingApi}}\"}}\n  \"_meta\": \{{{JSONstringify _meta}}},\n  \"snippet\": \{{{JSONstringify snippet}}},\n\t\"dateAsTimeStamp\": \{{{moment snippet.blogdate format=\"X\"}}}\n  \{{/withDeliveryContentItem}}\n}",
     "archivedContentWebhook": ""
   }
 ]
