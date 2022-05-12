@@ -109,7 +109,7 @@ Files that end in `.hbs` are Handlebars templates, and can use the context that 
 
     the application deployment URL (for visualizations)
 
-- `cms.hub.name`
+- `cms.hub`
 
     hub name
  

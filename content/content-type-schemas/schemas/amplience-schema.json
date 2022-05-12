@@ -11,83 +11,23 @@
 			"type": "object",
 			"properties": {
 				"hub": {
-					"title": "Main hub",
-					"type": "object",
-					"allOf": [{ "$ref": "#/definitions/hub" }]
-				},
-				"hubs": {
-					"title": "Alternate hubs",
-					"type": "array",
-					"items": { "$ref": "#/definitions/hub-pointer" }
-				}
-			}
-		},
-		"hub": {
-			"title": "Amplience hub configuration",
-			"type": "object",
-			"properties": {
-				"name": {
 					"title": "Hub name",
 					"type": "string",
-					"description": "cms.hub.name",
-					"minLength": 0,
-					"maxLength": 40
+					"description": "cms.hub"
 				},
 				"stagingApi": {
 					"title": "Staging API",
 					"type": "string",
-					"description": "cms.hub.stagingApi",
+					"description": "cms.stagingApi",
 					"minLength": 0,
 					"maxLength": 100
-				}		
-			}
-		},
-		"hub-pointer": {
-			"title": "Amplience hub pointer",
-			"type": "object",
-			"properties": {
-				"key": {
-					"title": "Hub lookup key",
-					"type": "string",
-					"default": "default",
-					"minLength": 0,
-					"maxLength": 40
 				},
-				"name": {
-					"title": "Hub name",
+				"imageHub": {
+					"title": "Image hub (optional)",
 					"type": "string",
-					"description": "cms.hubs.<key>.name",
+					"description": "cms.imageHub",
 					"minLength": 0,
 					"maxLength": 40
-				}
-			}
-		},
-		"dam-assets": {
-			"title": "DAM asset store",
-			"type": "object",
-			"properties": {
-				"source": {
-					"type": "object",
-					"properties": {
-						"type": {
-							"title": "Store type",
-							"type": "string",
-							"minLength": 0,
-							"maxLength": 40
-						},
-						"bucket": {
-							"title": "Bucket name",
-							"type": "string",
-							"minLength": 0,
-							"maxLength": 100
-						},
-						"region": {
-							"title": "Bucket region",
-							"type": "string",
-							"minLength": 0,
-							"maxLength": 20
-						}
-					}				
 				}
 			}
 		}
