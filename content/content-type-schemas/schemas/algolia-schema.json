@@ -1,19 +1,12 @@
 {
 	"$schema": "http://json-schema.org/draft-07/schema#",
 	"$id": "https://demostore.amplience.com/site/integration/algolia",
-
 	"title": "Algolia Integration Config",
 	"description": "",
-  
 	"definitions": {
 		"config": {
 			"type": "object",
 			"properties": {
-				"indexes": {
-					"title": "Indexes",
-					"type": "array",
-					"items": { "$ref": "#/definitions/index" }
-				},
 				"appId": {
 					"title": "App ID",
 					"type": "string",
@@ -27,33 +20,7 @@
 					"description": "algolia.apiKey",
 					"minLength": 0,
 					"maxLength": 100
-				}		
-			}
-		},
-		"index": {
-			"title": "Index set",
-			"type": "object",
-			"properties": {
-				"key": {
-					"title": "Index key",
-					"type": "string",
-					"minLength": 0,
-					"maxLength": 100
-				},
-				"prod": {
-					"title": "Production index",
-					"type": "string",
-					"description": "algolia.indexes.<key>.prod",
-					"minLength": 0,
-					"maxLength": 100
-				},
-				"staging": {
-					"title": "Staging index",
-					"type": "string",
-					"description": "algolia.indexes.<key>.staging",
-					"minLength": 0,
-					"maxLength": 100
-				}		
+				}
 			}
 		}
 	}
