@@ -1,5 +1,0 @@
-{
-  "body": "./schemas/integration-elasticpath-schema.json",
-  "schemaId": "https://demostore.amplience.com/site/integration/elasticpath",
-  "validationLevel": "CONTENT_TYPE"
-}

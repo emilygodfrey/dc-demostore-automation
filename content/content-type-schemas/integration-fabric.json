@@ -1,5 +1,0 @@
-{
-    "body": "./schemas/integration-fabric-schema.json",
-    "schemaId": "https://demostore.amplience.com/site/integration/fabric",
-    "validationLevel": "CONTENT_TYPE"
-  }

@@ -1,5 +1,0 @@
-{
-  "body": "./schemas/integration-hybris-schema.json",
-  "schemaId": "https://demostore.amplience.com/site/integration/hybris",
-  "validationLevel": "CONTENT_TYPE"
-}

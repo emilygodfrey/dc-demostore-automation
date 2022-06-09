@@ -13,13 +13,6 @@
 	
 	"type": "object",
 	"properties": {
-		"environment": {
-			"title": "Environment name",
-			"description": "The name of the environment",
-			"type": "string",
-			"minLength": 0,
-			"maxLength": 200
-		},
 		"url": {
 			"title": "App deployment URL",
 			"type": "string",
@@ -53,7 +46,6 @@
 		}
 	},
 	"propertyOrder": [
-		"environment",
 		"url",
 		"cms",
 		"algolia",
