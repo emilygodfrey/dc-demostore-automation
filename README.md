@@ -113,3 +113,7 @@ Files that end in `.hbs` are Handlebars templates, and can use the context that 
 
     hub name
  
+- `cms.stagingApi`
+
+    VSE URL
+ 
