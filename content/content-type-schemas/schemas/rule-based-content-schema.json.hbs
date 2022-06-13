@@ -1,0 +1,138 @@
+{ 
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://demostore.amplience.com/content/rule-based",
+
+	"title": "Rule Based Content",
+	"description": "",
+
+	"allOf": [
+		{
+			"$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+		}
+	],
+	
+	"type": "object",
+	"properties": {
+		"active": {
+			"type": "boolean",
+			"title": "Active"
+		},
+		"priority": {
+			"type": "number",
+			"title": "Priority"
+		},
+        "rules": {
+			"title": "Rules",
+			"type": "object",
+			"properties": {
+				"productCategories": {
+					"title": "Product Categories",
+					"type": "object",
+					"properties": {
+						"values": {
+							"type": "array",
+							"ui:extension": {
+								"name": "hierarchy-picker",
+								"params": {
+									"nodeId": "{{contentMap.homepage}}",
+									"type": "chip"
+								}
+							},
+							"items": {
+								"allOf": [{
+										"$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-reference"
+									},
+									{
+										"properties": {
+											"contentType": {
+												"enum": [
+													"https://demostore.amplience.com/site/pages/category"
+												]
+											}
+										}
+									}
+								]
+							}
+						}
+					}
+				},
+				"tags": {
+					"title": "Tags",
+					"type": "object",
+					"properties": {
+						"values": {
+							"type": "array",
+							"ui:extension": {
+								"name": "hierarchy-picker",
+								"params": {
+									"nodeId": "{{contentMap.hierarchy-taxonomies}}",
+									"type": "chip"
+								}
+							},
+							"items": {
+								"allOf": [{
+										"$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"
+									},
+									{
+										"properties": {
+											"contentType": {
+												"enum": [
+													"https://demostore.amplience.com/site/tag"
+												]
+											}
+										}
+									}
+								]
+							}
+						}
+					}
+				},
+				"pageTypes": {
+					"title": "Page Types",
+					"type": "object",
+					"properties": {
+						"values": {
+							"type": "array",
+							"ui:extension": {
+								"name": "hierarchy-picker",
+								"params": {
+									"nodeId": "{{contentMap.hierarchy-taxonomies}}",
+									"type": "chip"
+								}
+							},
+							"items": {
+								"allOf": [{
+										"$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"
+									},
+									{
+										"properties": {
+											"contentType": {
+												"enum": [
+													"https://demostore.amplience.com/site/tag"
+												]
+											}
+										}
+									}
+								]
+							}
+						}
+					}
+				}
+			}
+		},
+		"content": {
+			"title": "Component",
+			"allOf": [
+				{ "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link" },
+				{
+					"properties": {
+						"contentType": { "$ref": "https://demostore.amplience.com/lib/components#/definitions/anyComponent" }
+					}
+				}
+			]
+		}
+    },
+    
+    "definitions": {
+    }
+}

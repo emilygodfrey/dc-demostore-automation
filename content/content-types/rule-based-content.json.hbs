@@ -1,0 +1,27 @@
+{
+  "contentTypeUri": "https://demostore.amplience.com/content/rule-based",
+  "status": "ACTIVE",
+  "settings": {
+    "label": "Rule Based Content",
+    "icons": [
+      {
+        "size": 256,
+        "url": "https://cdn.media.amplience.net/i/willow/CT-icon-style4-usersegment?fmt=jpg&bg=white&w=300"
+      }
+    ],
+    "visualizations": [
+      {
+        "label": "Sitemap",
+        "templatedUri": "{{url}}/sitemap?vse=\{{vse.domain}}",
+        "default": true
+      },
+      {
+        "label": "Development",
+        "templatedUri": "http://localhost:3000/sitemap?vse=\{{vse.domain}}",
+        "default": false
+      }
+    ],
+    "cards": []
+  },
+  "repositories": [ "content", "contentfr", "contentde", "contentes", "contentit" ]
+}
