@@ -1,0 +1,41 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://demostore.amplience.com/content/simple-image-banner",
+	"title": "Simple Image Banner",
+	"description": "Simple Image Banner accelerator",
+	"allOf": [
+		{
+			"$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+		}
+	],
+	"type": "object",
+	"properties": {
+		"bannerImage": {
+			"description": "",
+			"type": "object",
+			"allOf": [
+				{
+					"$ref": "https://demostore.amplience.com/content/simple-image"
+				}
+			],
+			"title": "Banner image"
+		},
+		"link": {
+			"title": "Link",
+			"description": "The link for this content",
+			"type": "string"
+		},
+		"analytics": {
+			"title": "Analytics Label",
+			"type": "string",
+			"description": "Analytics Label for this banner",
+			"minLength": 0,
+			"maxLength": 2000
+		}
+	},
+	"propertyOrder": [
+		"bannerImage",
+		"link",
+		"analytics"
+	]
+}

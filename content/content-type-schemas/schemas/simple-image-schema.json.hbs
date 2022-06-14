@@ -1,0 +1,80 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://demostore.amplience.com/content/simple-image",
+	"title": "Simple Image ",
+	"description": "Simple Image accelerator",
+	"allOf": [
+		{
+			"$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+		}
+	],
+	"type": "object",
+	"properties": {
+		"image": {
+			"title": "Image",
+			"description": "Main Image",
+			"type": "object",
+			"properties": {
+				"image": {
+					"title": "Base Image",
+					"description": "The base image to apply DI transformations to.",
+					"allOf": [
+						{
+							"$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/image-link"
+						}
+					]
+				}
+			}
+		},
+		"imageref": {
+			"type": "string",
+			"minLength": 0,
+			"maxLength": 1000,
+			"title": "Optional reference to an external Main Image"
+		},
+		"mobileImage": {
+			"title": "Mobile Image (Optional)",
+			"description": "Optional Mobile version of image to show. Will show the main image if not set",
+			"type": "object",
+			"anyOf": [
+				{
+					"$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/image-link"
+				}
+			]
+		},
+		"mobileimageref": {
+			"type": "string",
+			"minLength": 0,
+			"maxLength": 1000,
+			"title": "Optional reference to an external Mobile Image"
+		},
+		"imageAltText": {
+			"type": "string",
+			"minLength": 0,
+			"maxLength": 150,
+			"title": "Image alt text"
+		},
+		"seoText": {
+			"type": "string",
+			"minLength": 0,
+			"maxLength": 100,
+			"title": "SEO text",
+			"pattern": "^[/A-Za-z0-9+_-]+$",
+			"description": "Enter only alphanumeric, _, -, +, / characters"
+		},
+		"gifImage": {
+			"title": "Animated Gif Image",
+			"description": "Is the image an Animated gif?",
+			"type": "boolean"
+		}
+	},
+	"propertyOrder": [
+		"image",
+		"imageref",
+		"gifImage",
+		"imageAltText",
+		"seoText",
+		"mobileImage",
+		"mobileimageref"
+	]
+}
