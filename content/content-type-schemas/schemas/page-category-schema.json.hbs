@@ -27,11 +27,12 @@
 	"type": "object",
 	"properties": {
         "_meta": {
-            "title": "Category Slug",
+            "title": "CMS Category Slug",
             "properties": {
                 "deliveryKey": {
                     "title": "Slug",
                     "type": "string",
+                    "description": "Slug of the page URL in the app",
                     "pattern": "category\/.*"
                 }
             },
@@ -41,7 +42,8 @@
         },
         "name": {
             "type": "string",
-            "title": "Category Name"
+            "title": "Ecommerce Category Slug",
+            "description": "Slug of the ecommerce category (i.e., 'womens', not 'Womens')"
         },
         "hideProductList": {
             "title": "Hide Product List",
