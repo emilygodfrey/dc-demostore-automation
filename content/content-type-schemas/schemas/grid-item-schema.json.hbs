@@ -1,0 +1,60 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://demostore.amplience.com/content/grid-item",
+  "title": "In-grid Item",
+  "description": "A configurable in grid item",
+  "allOf": [
+    {
+      "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+    }
+  ],
+  "type": "object",
+  "properties": {
+    "cols": {
+      "title": "cols",
+      "description": "Width of the item in number of grid columns.",
+      "type": "number",
+      "minimum": 1,
+      "maximum": 8,
+      "default": 1
+    },
+    "rows": {
+      "title": "rows",
+      "description": "Height of the item in number of grid rows.",
+      "type": "number",
+      "minimum": 1,
+      "maximum": 4,
+      "default": 1
+    },
+    "position": {
+      "title": "grid position",
+      "description": "Where in the listing gird the item will be placed.",
+      "type": "number",
+      "minimum": 0,
+      "default": 0
+    },
+    "card": {
+      "title": "Card",
+      "allOf": [
+        {
+          "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"
+        },
+        {
+          "properties": {
+            "contentType": {
+              "enum": [
+                "https://demostore.amplience.com/content/card-enhanced"
+              ]
+            }
+          }
+        }
+      ]
+    }
+  },
+  "propertyOrder": [
+    "position",
+    "cols",
+    "rows",
+    "card"
+  ]
+}

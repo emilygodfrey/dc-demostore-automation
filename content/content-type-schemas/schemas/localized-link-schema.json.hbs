@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://demostore.amplience.com/lib/link",
-  "title": "Link",
+  "$id": "https://demostore.amplience.com/lib/localized-link",
+  "title": "Localized Link",
   "description": "Link to a URL",
   "allOf": [
     {
@@ -11,18 +11,26 @@
   "type": "object",
   "properties": {
     "label": {
-      "type": "string",
       "title": "Label",
       "description": "The label to be used on display of a link",
       "minLength": 0,
-      "maxLength": 255
+      "maxLength": 255,
+      "allOf":[
+        {
+          "$ref":"http://bigcontent.io/cms/schema/v1/localization#/definitions/localized-string"
+        }
+      ]
     },
     "value": {
-      "type": "string",
       "title": "Value",
       "description": "A relative URL, absolute URL or an ID",
       "minLength": 0,
-      "maxLength": 2000
+      "maxLength": 2000,
+      "allOf":[
+        {
+          "$ref":"http://bigcontent.io/cms/schema/v1/localization#/definitions/localized-string"
+        }
+      ]
     },
     "type": {
       "type": "string",

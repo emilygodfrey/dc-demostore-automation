@@ -1,31 +1,31 @@
-{ 
-	"$schema": "http://json-schema.org/draft-07/schema#",
-	"$id": "https://demostore.amplience.com/site/pages/category",
-
-	"title": "Category Page",
-	"description": "",
-
-	"allOf": [
-		{
-			"$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
-		}
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://demostore.amplience.com/site/pages/category",
+    "title": "Category Page",
+    "description": "",
+    "allOf": [
+        {
+            "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+        }
     ],
-    
     "trait:hierarchy": {
-		"childContentTypes": [
+        "childContentTypes": [
             "https://demostore.amplience.com/site/page-group",
             "https://demostore.amplience.com/site/pages/category"
         ]
     },
-
     "trait:sortable": {
         "sortBy": [
-            { "key": "default", "paths": ["/menu/priority"] }
+            {
+                "key": "default",
+                "paths": [
+                    "/menu/priority"
+                ]
+            }
         ]
     },
-	
-	"type": "object",
-	"properties": {
+    "type": "object",
+    "properties": {
         "_meta": {
             "title": "CMS Category Slug",
             "properties": {
@@ -45,22 +45,54 @@
             "title": "Ecommerce Category Slug",
             "description": "Slug of the ecommerce category (i.e., 'womens', not 'Womens')"
         },
+        "title": {
+            "title": "Title of this page",
+            "description": "This is on optional title for this page",
+            "minLength": 0,
+            "maxLength": 50,
+            "allOf": [
+                {
+                    "$ref": "http://bigcontent.io/cms/schema/v1/localization#/definitions/localized-string"
+                }
+            ]
+        },
         "hideProductList": {
             "title": "Hide Product List",
             "description": "Hide Product List for a Category Landing Page for instance.",
             "type": "boolean"
         },
-        "menu": { "$ref": "https://demostore.amplience.com/lib/menu#/definitions/menuItemConfig" },
+        "gridslots": {
+            "title": "In-Grid Tiles",
+            "type": "array",
+            "minItems": 0,
+            "maxItems": 10,
+            "items": {
+                "title": "In-grid Tiles",
+                "type": "object",
+                "allOf": [
+                    {
+                        "$ref": "https://demostore.amplience.com/content/grid-item"
+                    }
+                ]
+            }
+        },
+        "menu": {
+            "$ref": "https://demostore.amplience.com/lib/menu#/definitions/menuItemConfig"
+        },
         "components": {
             "title": "Components",
             "type": "array",
             "items": {
                 "title": "Component",
                 "allOf": [
-                    { "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link" },
+                    {
+                        "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"
+                    },
                     {
                         "properties": {
-                            "contentType": { "$ref": "https://demostore.amplience.com/lib/components#/definitions/anyComponent" }
+                            "contentType": {
+                                "$ref": "https://demostore.amplience.com/lib/components#/definitions/anyComponent"
+                            }
                         }
                     }
                 ]
@@ -72,17 +104,19 @@
             "items": {
                 "title": "Slots",
                 "allOf": [
-                    { "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-reference" },
+                    {
+                        "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-reference"
+                    },
                     {
                         "properties": {
-                            "contentType": { "$ref": "https://demostore.amplience.com/lib/components#/definitions/anySlot" }
+                            "contentType": {
+                                "$ref": "https://demostore.amplience.com/lib/components#/definitions/anySlot"
+                            }
                         }
                     }
                 ]
             }
         }
     },
-
-    "definitions": {
-    }
+    "definitions": {}
 }
