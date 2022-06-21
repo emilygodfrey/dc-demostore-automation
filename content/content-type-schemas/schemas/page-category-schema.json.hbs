@@ -40,10 +40,18 @@
                 "deliveryKey"
             ]
         },
-        "name": {
-            "type": "string",
+        "category": {
             "title": "Ecommerce Category Slug",
-            "description": "Slug of the ecommerce category (i.e., 'womens', not 'Womens')"
+            "description": "Slug of the ecommerce category (i.e., 'womens', not 'Womens')",
+            "ui:extension": {
+                "name": "ecomm-toolkit",
+                "params": {
+                    "label": "Category",
+                    "view": "single",
+                    "data": "category",
+                    "type": "object"
+                }
+            }
         },
         "title": {
             "title": "Title of this page",
