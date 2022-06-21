@@ -1,0 +1,106 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://demostore.amplience.com/content/card-enhanced",
+  "title": "Card Enhanced",
+  "description": "A re-usable card with responsive imaging",
+  "allOf": [
+    {
+      "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+    }
+  ],
+  "type": "object",
+  "properties": {
+    "image": {
+      "type": "object",
+      "title": "Image",
+      "description": "Image used in the card",
+      "allOf": [
+        {
+          "$ref": "https://demostore.amplience.com/lib/di-image"
+        }
+      ]
+    },
+    "mainText": {
+      "title": "Card Main Text (max 50 chars.)",
+      "description": "description",
+      "minLength": 0,
+      "maxLength": 50,
+      "allOf": [
+        {
+          "$ref": "http://bigcontent.io/cms/schema/v1/localization#/definitions/localized-string"
+        }
+      ]
+    },
+    "subText": {
+      "title": "Card Main Text (max 50 chars.)",
+      "description": "description",
+      "minLength": 0,
+      "maxLength": 150,
+      "allOf": [
+        {
+          "$ref": "http://bigcontent.io/cms/schema/v1/localization#/definitions/localized-string"
+        }
+      ]
+    },
+    "textAlignment": {
+      "title": "Text Alignment",
+      "description": "left, right, or center text alignment",
+      "type": "string",
+      "default": "right",
+      "enum": [
+        "left",
+        "right",
+        "center"
+      ]
+    },
+    "verticalAlignment": {
+      "title": "Vertical Text Alignment",
+      "description": "top, middle, or bottom text alignment",
+      "type": "string",
+      "default": "bottom",
+      "enum": [
+        "top",
+        "middle",
+        "bottom"
+      ]
+    },
+    "linkPosition": {
+      "title": "Position Link with card text",
+      "description": "place link with the card text OR below the image. Text Alignment still applies",
+      "default": "withtext",
+      "type": "string",
+      "enum": [
+        "withtext",
+        "belowimage"
+      ]
+    },
+    "color": {
+      "title": "Text Color",
+      "description": "Color for all text in the card. If link is placed below the image, that text will be black.",
+      "format": "color",
+      "type": "string"
+    },
+    "blend": {
+      "title": "Text Blending",
+      "description": "Blending option for text over image",
+      "type": "string",
+      "default": "normal",
+      "enum": [
+        "normal",
+        "overlay",
+        "difference",
+        "exclusion"
+      ]
+    },
+    "links": {
+      "type": "array",
+      "title": "Links",
+      "description": "Links for the card",
+      "items": {
+        "$ref": "https://demostore.amplience.com/lib/link"
+      },
+      "minItems": 0,
+      "maxItems": 4
+    }
+  }
+}
