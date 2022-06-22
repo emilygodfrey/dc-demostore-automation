@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://demostore.amplience.com/content/shoppable-video",
+  "title": "Shoppable Video",
+  "description": "Shoppable Video",
+  "allOf": [
+    {
+      "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+    }
+  ],
+  "type": "object",
+  "properties": {
+    "shoppableVideo": {
+        "title": "Shoppable Video",
+        "description": "A video enriched with timed, animated hotspots that can be used for user interaction.",
+        "allOf": [
+            { "$ref": "https://demostore.amplience.com/lib/shoppable-video-partial#/definitions/shoppableVideo" }
+        ]
+    } 
+  }
+}
