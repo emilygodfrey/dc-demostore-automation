@@ -1,0 +1,41 @@
+{
+  "contentTypeUri": "https://demostore.amplience.com/content/shoppable-image",
+  "status": "ACTIVE",
+  "settings": {
+    "label": "Shoppable Image",
+    "icons": [
+      {
+        "size": 256,
+        "url": "https://cdn.media.amplience.net/i/willow/AnyaFinn-CTicon-Card?fmt=jpg&bg=white&w=300"
+      }
+    ],
+    "visualizations": [
+      {
+        "label": "Site",
+        "templatedUri": "{{url}}/visualization?vse=\{{vse.domain}}&content=\{{content.sys.id}}&locale=\{{locales}}&realtime=true",
+        "default": true
+      },
+      {
+        "label": "Development",
+        "templatedUri": "http://localhost:3000/cms/visualization?content=\{{content.sys.id}}&vse=\{{vse.domain}}&locale=\{{locales}}&realtime=true",
+        "default": false
+      },
+      {
+        "label": "QR for Mobile",
+        "templatedUri": "{{url}}/visualization/qr?vse=\{{vse.domain}}&content=\{{content.sys.id}}&locale=\{{locales}}",
+        "default": false
+      },
+      {
+        "label": "JSON",
+        "templatedUri": "https://delivery-preview.visualizations.content.amplience.net?id=\{{content.sys.id}}&vse=\{{vse.domain}}&locale=\{{locales}}&hub={{cms.hub}}&realtime=true",
+        "default": false
+      }
+    ],
+    "cards": [
+      {
+        "templatedUri": "https://amp-rsa-cards.vercel.app/?#vse=\{{vse.domain}}&content=\{{content.sys.id}}"
+      }
+    ]
+  },
+  "repositories": [ "content", "contentfr", "contentde", "contentes", "contentit" ]
+}
