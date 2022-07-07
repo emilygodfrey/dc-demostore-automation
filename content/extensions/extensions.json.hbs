@@ -1,5 +1,17 @@
 [
   {
+      "name": "shoppable-image",
+      "label": "Shoppable Image",
+      "description": "Shoppable Image Extension",
+      "height": 200,
+      "url": "https://shoppable-image.extensions.content.amplience.net",
+      "category": "CONTENT_FIELD",
+      "parameters": "{}",
+      "snippets": [],
+      "settings": null,
+      "status": "ACTIVE"
+  },
+  {
       "name": "dom-extension",
       "label": "DOM Extension",
       "description": "DOM editor",
@@ -99,48 +111,7 @@
       "snippets": [],
       "settings": null,
       "status": "ACTIVE"
-  },
-  {
-      "name": "swiss-army-knife",
-      "label": "Swiss Army Knife",
-      "description": "",
-      "url": "https://dc-extension-ecom-swissarmyknife.vercel.app",
-      "height": 200,
-      "category": "CONTENT_FIELD",
-      "parameters": "{\n  \"config_locator\": \"\" \n}",
-      "snippets": [
-          {
-              "label": "User Segments - Multi select - object",
-              "body": "{\"title\":\"User Segments\",\"description\":\"Multi-select User Segments and store as {name:string,id:string}\",\"type\":\"array\",\"minItems\":0,\"maxItems\":5,\"items\":{\"type\":\"object\",\"properties\":{\"id\":{\"title\":\"ID\",\"type\":\"string\"},\"name\":{\"title\":\"Name\",\"type\":\"string\"}}},\"ui:extension\":{\"name\":\"swiss-army-knife\",\"params\":{\"label\":\"User Segments\",\"view\":\"multi\",\"data\":\"segment\",\"type\":\"object\"}}}"
-          },
-          {
-              "label": "User Segments - Multi select - string",
-              "body": "{\"title\":\"User Groups\",\"description\":\"Multi-select User Segments and store as string\",\"type\":\"array\",\"minItems\":0,\"maxItems\":5,\"items\":{\"type\":\"string\"},\"ui:extension\":{\"name\":\"swiss-army-knife\",\"params\":{\"label\":\"User Segments\",\"view\":\"multi\",\"data\":\"segment\",\"type\":\"string\"}}}"
-          },
-          {
-              "label": "Category - Single Select - object",
-              "body": "{\"title\":\"Category\",\"description\":\"Single-select Category and store Name,ID as {name:string,id:string}\",\"type\":\"object\",\"properties\":{\"name\":{\"title\":\"Name\",\"type\":\"string\"},\"id\":{\"title\":\"ID\",\"type\":\"string\"}},\"propertyOrder\":[\"id\",\"name\"],\"ui:extension\":{\"name\":\"swiss-army-knife\",\"params\":{\"label\":\"Category\",\"view\":\"single\",\"data\":\"category\",\"type\":\"object\"}}}"
-          },
-          {
-              "label": "Category - Single Select - string",
-              "body": "{\"title\":\"Category\",\"description\":\"Single-select Category and store ID as string\",\"type\":\"string\",\"ui:extension\":{\"name\":\"swiss-army-knife\",\"params\":{\"label\":\"Category\",\"view\":\"single\",\"data\":\"category\",\"type\":\"string\"}}}"
-          },
-          {
-              "label": "Category - Single Select - enforced string",
-              "body": "{\"title\":\"Category\",\"description\":\"Single-select Category and store ID as string\",\"type\":\"string\",\"pattern\":\"category/.*\",\"ui:extension\":{\"name\":\"swiss-army-knife\",\"params\":{\"label\":\"Category\",\"view\":\"single\",\"data\":\"category\",\"type\":\"string\"}}}"
-          },
-          {
-              "label": "Category - Single Select Tree - string",
-              "body": "{\"title\":\"Category\",\"description\":\"Single-select Category Tree and store ID as string\",\"type\":\"string\",\"ui:extension\":{\"name\":\"swiss-army-knife\",\"params\":{\"label\":\"Category\",\"view\":\"tree\",\"data\":\"category\",\"type\":\"string\"}}}"
-          },
-          {
-              "label": "Category - Single Select Tree - enforced string",
-              "body": "{\"title\":\"Category\",\"description\":\"Single-select Category Tree and store ID as string\",\"type\":\"string\",\"pattern\":\"category/.*\",\"ui:extension\":{\"name\":\"swiss-army-knife\",\"params\":{\"label\":\"Category\",\"view\":\"tree\",\"data\":\"category\",\"type\":\"string\"}}}"
-          }
-      ],
-      "settings": "{\"API\":{\"READ\":true,\"EDIT\":true},\"SANDBOX\":{\"SAME_ORIGIN\":true,\"MODALS\":true,\"NAVIGATION\":true,\"POPUPS\":true,\"POPUP_ESCAPE_SANDBOX\":true,\"DOWNLOADS\":true,\"FORMS\":true}}",
-      "status": "ACTIVE"
-  },
+    },
     {
       "name": "deep-copy",
       "label": "Deep Copy",
