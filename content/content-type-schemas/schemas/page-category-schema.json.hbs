@@ -45,6 +45,34 @@
             "title": "Ecommerce Category Slug",
             "description": "Slug of the ecommerce category (i.e., 'womens', not 'Womens')"
         },
+        "category": {
+            "title": "Category",
+            "description": "Single-select Category and store Name,ID as {name:string,id:string}",
+            "type": "object",
+            "properties": {
+                "name": {
+                "title": "Name",
+                "type": "string"
+                },
+                "id": {
+                "title": "ID",
+                "type": "string"
+                }
+            },
+            "propertyOrder": [
+                "id",
+                "name"
+            ],
+            "ui:extension": {
+                "name": "ecomm-toolkit",
+                "params": {
+                  "label": "Category",
+                  "view": "single",
+                  "data": "category",
+                  "type": "object"
+                }
+            }
+        },
         "hideProductList": {
             "title": "Hide Product List",
             "description": "Hide Product List for a Category Landing Page for instance.",
