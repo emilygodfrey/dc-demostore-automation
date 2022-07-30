@@ -1,0 +1,36 @@
+{ 
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://demostore.amplience.com/content/horizontal-scroll-sections",
+  "title": "Card",
+  "description": "A single card of content",
+  "allOf": [
+    {
+      "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+    }
+  ],
+  "type": "object",
+	"properties": {
+		"cards": {
+			"title": "Cards",
+			"type": "array",
+			"minItems": 0,
+			"maxItems": 10,
+			"items": {
+				"allOf": [
+					{ "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link" },
+					{
+						"properties": {
+							"contentType": {
+								"enum": [
+									"https://demostore.amplience.com/content/card"
+								]
+							}
+						}
+					}
+				]
+			}
+		}
+		
+	},
+	"propertyOrder": []
+}
